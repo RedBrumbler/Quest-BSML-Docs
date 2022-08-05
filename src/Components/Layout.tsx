@@ -4,8 +4,10 @@ import SideBar from './SideBar'
 export default function Layout() {
     return (
         <main className='app'>
-            <SideBar/>
-            <Outlet/>
+            <div className='centerapp'>
+                <SideBar/>
+                <Outlet/>
+            </div>
         </main>
     )
 }

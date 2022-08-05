@@ -47,7 +47,14 @@ export default function SideBar() {
                 </Menu>
             </SidebarContent>
             <SidebarFooter>
-                <a href="https://github.com/RedBrumbler/Quest-BSML"> Visit the Github Repo! </a>
+                <a 
+                    href="https://github.com/RedBrumbler/Quest-BSML" 
+                    target='_blank'
+                    className="sidebar-btn"
+                    rel="noopener noreferrer"
+                > 
+                Visit the Github Repo! 
+                </a>
             </SidebarFooter>
         </ProSidebar>
         )
