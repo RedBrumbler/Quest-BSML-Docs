@@ -6,14 +6,17 @@ export type Props = React.HTMLAttributes<HTMLElement> & {
     description?: String;
 }
 
-const Title: FunctionComponent<Props> = ({title, description}) => {
+const Title: FunctionComponent<Props> = ({title, description, children}) => {
     return (
-        <header>
+        <header className='title'>
             <h1>
                 { title}
             </h1>
             <p>{ description }</p>
             <div className='spacer'/>
+            { children }
+            
+            { children != null ? <div className='spacer'/> : <></>}
         </header>
     )
 }

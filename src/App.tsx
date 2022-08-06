@@ -10,6 +10,7 @@ import Argument from './Pages/Argument'
 import ArgumentList from './Pages/ArgumentList'
 import Home from './Pages/Home'
 import Unknown from './Pages/Unknown'
+import GettingStarted from './Pages/GettingStarted'
 import './styles/App.scss';
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
                 <Route path='/' element={<Layout/>}>
                     <Route index element={<Home/>}/>
                     <Route path='home' element={<Home/>}/>
+                    <Route path='getting-started' element={<GettingStarted/>}/>
                     <Route path='tags' element={<TagList/>}/>
                     <Route path='tags/:tag' element={<Tag/>}/>
                     <Route path='macros' element={<MacroList/>}/>

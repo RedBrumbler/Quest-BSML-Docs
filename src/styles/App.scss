@@ -211,6 +211,41 @@ body {
       .homepage {
         width: 100%
       }
+      
+      .subtitle {
+        padding-top: 1rem
+      }
+
+      .command-wrapper {
+        display: block;
+        .command {  
+          display: inline-block;
+          background-color: $property-bg-color;
+          padding: 0.5rem;
+          margin: 1rem;
+          border-radius: .5rem;
+          .cmd {
+            color: orange;
+          }
+        }
+      }
+
+      .code-block {
+        display: block;
+        .code-title {
+
+        }
+
+        code {
+          display: block;
+          background-color: $property-bg-color;
+          padding: 0.5rem;
+          margin: 1rem;
+          border-radius: .5rem;;
+          min-height: 5rem;
+          
+        }
+      }
     }
   }
 }
