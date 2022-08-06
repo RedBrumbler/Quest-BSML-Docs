@@ -9,6 +9,14 @@ $icon-bg-color: rgba(255, 255, 255, 0.05);
 $icon-size: 35px;
 
 @import '~react-pro-sidebar/dist/scss/styles.scss';
+
+$bg-color: #070626;
+$transition-color: #04031c;
+$spacer-color: rgba(255, 255, 255, 0.20);
+$alias-color: rgb(40, 113, 231);
+$link-and-text-color: #b3b8d4;
+$property-bg-color: rgba(255, 255, 255, 0.05);
+
 body {
   margin: 0;
   height: 100vh;
@@ -20,7 +28,7 @@ body {
 
 #root {
   height: 100%;
-  background: linear-gradient(90deg, #04031c 0% 50%, #070626 50% 0%);
+  background: linear-gradient(90deg, $transition-color 0% 50%, $bg-color 50% 0%);
 
   ::-webkit-scrollbar {
     width: 0px;
@@ -45,8 +53,8 @@ body {
 }
 
 .main-body {
-  color: #b3b8d4;
-  background-color: #070626;
+  color: $link-and-text-color;
+  background-color: $bg-color;
   height: 100%;
   flex-grow: 1;
   display: flex;
@@ -59,14 +67,14 @@ body {
     border-radius: .5rem;
 
     .spacer {
-      background-color: rgba(255, 255, 255, 0.20);
+      background-color: $spacer-color;
       height: .1rem;
     }
 
     .link {
-      color: #b3b8d4;
+      color: $link-and-text-color;
       text-decoration: none;
-      border-bottom: 1px dotted #b3b8d4;
+      border-bottom: 1px dotted $link-and-text-color;
       &:hover {
         color: #dee2ec;
       }
@@ -84,7 +92,7 @@ body {
 
     .alias {
       display: inline-block;
-      background-color: rgb(40, 113, 231);
+      background-color: $alias-color;
       color: rgb(0, 0, 0);
       padding: 0.2rem .5rem 0.2rem .5rem;
       margin: .2rem;
@@ -132,7 +140,7 @@ body {
     }
 
     .property {
-      background-color: rgba(255, 255, 255, 0.05);
+      background-color: $property-bg-color;
       padding: 0.5rem;
       border-radius: .5rem;
       margin-top: 1.5rem;
