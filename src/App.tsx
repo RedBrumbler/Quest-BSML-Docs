@@ -1,8 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from './Components/Layout'
-import Taglist from './Components/Taglist'
-import Macrolist from './Components/Macrolist'
-import Componentlist from './Components/Componentlist'
+import Tag from './Components/Tag'
+import TagList from './Components/TagList'
+import Macro from './Components/Macro'
+import MacroList from './Components/MacroList'
+import Component from './Components/Component'
+import ComponentList from './Components/ComponentList'
 import Home from './Components/Home'
 import './styles/App.scss';
 
@@ -12,12 +15,12 @@ export default function App() {
             <Routes>
                 <Route path='/' element={<Layout/>}>
                     <Route path='home' element={<Home/>}/>
-                    <Route path='tags' element={<Taglist/>}/>
-                    <Route path='tags/:tag' element={<Taglist/>}/>
-                    <Route path='macros' element={<Macrolist/>}/>
-                    <Route path='macros/:macro' element={<Macrolist/>}/>
-                    <Route path='components' element={<Componentlist/>}/>
-                    <Route path='components/:component' element={<Componentlist/>}/>
+                    <Route path='tags' element={<TagList/>}/>
+                    <Route path='tags/:tag' element={<Tag/>}/>
+                    <Route path='macros' element={<MacroList/>}/>
+                    <Route path='macros/:macro' element={<Macro/>}/>
+                    <Route path='components' element={<ComponentList/>}/>
+                    <Route path='components/:component' element={<Component/>}/>
                 </Route>
             </Routes>
         </BrowserRouter>

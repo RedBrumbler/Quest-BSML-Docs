@@ -14,7 +14,8 @@ export default function SideBar() {
                     <SubMenu title="Home">
                     </SubMenu>
                     <SubMenu title="Tags">
-                        { docs.tags.map(t => {
+                        <MenuItem>All Tags<Link to='/tags'/></MenuItem>
+                        { docs.tags.sort((a, b) => a.name.localeCompare(b.name)).map(t => {
                             return (
                                 <MenuItem> 
                                     {t.name} 
@@ -25,7 +26,8 @@ export default function SideBar() {
                         
                     </SubMenu>
                     <SubMenu title="Macros">
-                        { docs.macros.map(m => {
+                        <MenuItem>All Macros<Link to='/macros'/></MenuItem>
+                        { docs.macros.sort((a, b) => a.name.localeCompare(b.name)).map(m => {
                             return (
                                 <MenuItem> 
                                     {m.name} 
@@ -35,7 +37,8 @@ export default function SideBar() {
                         }) }
                     </SubMenu>
                     <SubMenu title="Components">
-                        { docs.components.map(c => {
+                        <MenuItem>All Components<Link to='/components'/></MenuItem>
+                        { docs.components.sort((a, b) => a.typename.localeCompare(b.typename)).map(c => {
                             return (
                                 <MenuItem> 
                                     {c.typename}
