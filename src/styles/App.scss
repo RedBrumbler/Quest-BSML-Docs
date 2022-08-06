@@ -16,11 +16,16 @@ $spacer-color: rgba(255, 255, 255, 0.20);
 $alias-color: rgb(40, 113, 231);
 $link-and-text-color: #b3b8d4;
 $property-bg-color: rgba(255, 255, 255, 0.05);
+$link-color: #0f0f0f;
+$primitive-type: rgb(34, 204, 128);
+$component-bg-color: rgb(9, 8, 52); 
+$body-color: #353535;
+$black: rgb(0, 0, 0);
 
 body {
   margin: 0;
   height: 100vh;
-  color: #353535;
+  color: $body-color;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -81,7 +86,7 @@ body {
     }
 
     .aliasesTitle {
-      color: #b3b8d4;
+      color: $link-and-text-color;
       font-size: 1.3rem;
     }
 
@@ -93,15 +98,15 @@ body {
     .alias {
       display: inline-block;
       background-color: $alias-color;
-      color: rgb(0, 0, 0);
+      color: $black;
       padding: 0.2rem .5rem 0.2rem .5rem;
       margin: .2rem;
       font-size: .8rem;
       border-radius: .5rem;
 
       .link {
-        color: #0f0f0f;
-        border-bottom: 1px dotted #0f0f0f;
+        color: $link-color;
+        border-bottom: 1px dotted $link-color;
       &:hover {
           color: #dee2ec;
         }
@@ -110,8 +115,8 @@ body {
 
     .type {
       display: inline-block;
-      background-color: rgb(34, 204, 128);
-      color: rgb(0, 0, 0);
+      background-color: $primitive-type;
+      color: $black;
       padding: 0.2rem .5rem 0.2rem .5rem;
       margin: .2rem;
       font-size: .8rem;
@@ -119,7 +124,7 @@ body {
     }
 
     .component {
-      background-color: rgb(9, 8, 52);
+      background-color: $component-bg-color;
       line-height: 1rem;
       padding: 0.5rem;
       margin: 1rem;
