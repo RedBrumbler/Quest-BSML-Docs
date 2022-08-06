@@ -1,20 +1,20 @@
 import docs from '../assets/docs.json'
 import { Link } from 'react-router-dom'
-import Title from './Title'
+import Title from '../Components/Title';
 
-export default function ComponentList() {
-    let components = docs.components.sort((a, b) => a.typename.localeCompare(b.typename))
+export default function MacroList() {
+    let macros = docs.macros.sort((a, b) => a.name.localeCompare(b.name))
     return (
         <div className='main-body'>
             <div className='main-content'>
-                <Title title="All Components" description={components.length + " Components"}/>
+                <Title title="All Macros" description={macros.length + " Macros"}/>
                 {
-                    components.map(c => {
+                    macros.map(m => {
                         return (
                             <div className='tag-item'>
                                 <div className='alias'>
-                                    <Link className='link' to={'/components/' + c.typename}>
-                                        {c.typename}
+                                    <Link className='link' to={'/macros/' + m.name}>
+                                        {m.name}
                                     </Link>
                                 </div>
                             </div>

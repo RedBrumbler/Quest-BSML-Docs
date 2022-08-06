@@ -1,9 +1,9 @@
 import docs from '../assets/docs.json'
 import { useParams, Link, Path } from 'react-router-dom'
 import '../styles/App.scss'
-import Title from './Title'
-import Aliases from './Aliases'
-import Property from './Property'
+import Title from '../Components/Title'
+import Aliases from '../Components/Aliases'
+import Property from '../Components/Property'
 
 export default function Tag() {
     let { tag } = useParams();
@@ -53,7 +53,7 @@ export default function Tag() {
                                                     <Property aliases={p.aliases} type={p.type} description={p.description} typelink={'/arguments/' + linkedType.name}/> :
                                                     <Property aliases={p.aliases} type={p.type} description={p.description}/>
                                                 )
-                                        }
+                                            }
                                         )}
                                     </div>
                                 )

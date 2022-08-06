@@ -1,8 +1,8 @@
 import docs from '../assets/docs.json'
 import { useParams, Link } from 'react-router-dom'
-import Title from './Title'
-import Aliases from './Aliases'
-import Property from './Property'
+import Title from '../Components/Title'
+import Aliases from '../Components/Aliases'
+import Property from '../Components/Property'
 
 export default function Macro() {
     let { macro } = useParams();
@@ -24,10 +24,17 @@ export default function Macro() {
         <div className='main-body'>
             <div className='main-content'>
                 <Title title={macro} description={docMacro.description}/>
-                <Aliases aliases={docMacro.aliases}/>
+                { docMacro.aliases.length > 1 ? <Aliases aliases={docMacro.aliases} prefix='Aliases: '/> : <></> }
                 {
                     docMacro.properties.map(
-                        p => <Property aliases={p.aliases} type={p.type} description={p.description}/>
+                        p => {
+                            let linkedType = docs.arguments.find(a => a.name === p.type);
+                            return (
+                                linkedType != null ? 
+                                <Property aliases={p.aliases} type={p.type} description={p.description} typelink={'/arguments/' + linkedType.name}/> :
+                                <Property aliases={p.aliases} type={p.type} description={p.description}/>
+                            )
+                        }
                     )
                 }
             </div>

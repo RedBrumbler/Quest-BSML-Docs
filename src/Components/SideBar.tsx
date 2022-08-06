@@ -11,8 +11,7 @@ export default function SideBar() {
             </SidebarHeader>
             <SidebarContent>
                 <Menu iconShape='square'>
-                    <SubMenu title="Home">
-                    </SubMenu>
+                    <MenuItem>Home<Link to='/home'/></MenuItem>
                     <SubMenu title="Tags">
                         <MenuItem>All Tags<Link to='/tags'/></MenuItem>
                         { docs.tags.sort((a, b) => a.name.localeCompare(b.name)).map(t => {

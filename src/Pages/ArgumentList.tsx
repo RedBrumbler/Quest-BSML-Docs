@@ -1,6 +1,6 @@
 import docs from '../assets/docs.json'
 import { useParams, Link } from 'react-router-dom'
-import Title from './Title';
+import Title from '../Components/Title';
 
 export default function ArgumentList() {
     let args = docs.arguments.sort((a, b) => a.name.localeCompare(b.name))

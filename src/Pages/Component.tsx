@@ -1,8 +1,8 @@
 import docs from '../assets/docs.json'
 import { useParams, Link } from 'react-router-dom'
-import Title from './Title'
-import Aliases from './Aliases'
-import Property from './Property'
+import Title from '../Components/Title';
+import Aliases from '../Components/Aliases';
+import Property from '../Components/Property';
 
 export default function Component() {
     let { component } = useParams();
@@ -23,12 +23,15 @@ export default function Component() {
             <div className='main-content'>
                 <Title title={component} description={docComponent.description}/>
                 {
-                    docComponent.properties.map(p => (
-                        <Property 
-                                aliases={p.aliases} 
-                                type={p.type} 
-                                description={p.description}/>
-                    ))
+                    docComponent.properties.map(
+                        p => {
+                            let linkedType = docs.arguments.find(a => a.name === p.type);
+                            return (
+                                linkedType != null ? 
+                                <Property aliases={p.aliases} type={p.type} description={p.description} typelink={'/arguments/' + linkedType.name}/> :
+                                <Property aliases={p.aliases} type={p.type} description={p.description}/>
+                            )
+                    })
                 }
                 <div>
                     <Title title='Used in the following tags:'/>

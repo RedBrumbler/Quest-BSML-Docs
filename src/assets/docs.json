@@ -822,7 +822,7 @@
                         "background-color"
                     ],
                     "description": "Color value of the background",
-                    "type": "HTML ColorString"
+                    "type": "HTML Color String"
                 }
             ],
             "description": "This component handles setting the background imageviews on layouts"
@@ -882,7 +882,7 @@
                         "default-color"
                     ],
                     "description": "The color the image is when it's not hovered",
-                    "type": "HTML ColorString"
+                    "type": "HTML Color String"
                 },
                 {
                     "key": "highlightColor",
@@ -890,7 +890,7 @@
                         "highlight-color"
                     ],
                     "description": "The color the image becomes when it gets hovered",
-                    "type": "HTML ColorString"
+                    "type": "HTML Color String"
                 },
                 {
                     "key": "onClick",
@@ -921,7 +921,7 @@
                         "default-color"
                     ],
                     "description": "The color the text is when it's not hovered",
-                    "type": "HTML ColorString"
+                    "type": "HTML Color String"
                 },
                 {
                     "key": "highlightColor",
@@ -929,7 +929,7 @@
                         "highlight-color"
                     ],
                     "description": "The color the text is when it gets hovered",
-                    "type": "HTML ColorString"
+                    "type": "HTML Color String"
                 },
                 {
                     "key": "onClick",
@@ -1313,7 +1313,7 @@
                         "img-color"
                     ],
                     "description": "The color of the image",
-                    "type": "HTML ColorString"
+                    "type": "HTML Color String"
                 },
                 {
                     "key": "preserveAspect",
@@ -1720,7 +1720,7 @@
                         "handle-color"
                     ],
                     "description": "The color of the handle image",
-                    "type": "HTML ColorString"
+                    "type": "HTML Color String"
                 },
                 {
                     "key": "handleImage",
@@ -2015,7 +2015,7 @@
                         "face-color"
                     ],
                     "description": "The face color of the font",
-                    "type": "HTML ColorString"
+                    "type": "HTML Color String"
                 },
                 {
                     "key": "fontAlign",
@@ -2032,7 +2032,7 @@
                         "font-color"
                     ],
                     "description": "The color of the font",
-                    "type": "HTML ColorString"
+                    "type": "HTML Color String"
                 },
                 {
                     "key": "fontSize",
@@ -2056,7 +2056,7 @@
                         "outline-color"
                     ],
                     "description": "The color of the outline",
-                    "type": "HTML ColorString"
+                    "type": "HTML Color String"
                 },
                 {
                     "key": "outlineWidth",
@@ -2128,7 +2128,7 @@
                         "data"
                     ],
                     "description": "BSMLValue id of the List<StringW> to use",
-                    "type": "BSMLValue ID (List<Il2CppObject*>* | List<StringW>*)"
+                    "type": "BSMLValue ID (List<StringW>*)"
                 },
                 {
                     "key": "selectCell",
@@ -2156,25 +2156,27 @@
             "name": "string",
             "description": "Text value",
             "possibleValues": [
-                "..."
+                "BSML is cool",
+                "I like trains",
+                "Pink Cute"
             ]
         },
         {
             "name": "float",
             "description": "Decimal value",
             "possibleValues": [
-                "numeric"
+                "0", "1", "-0.2", "25500.3654"
             ]
         },
         {
             "name": "int",
             "description": "Integer value",
             "possibleValues": [
-                "..."
+                "0", "2", "420", "-69"
             ]
         },
         {
-            "name": "HTML ColorString",
+            "name": "HTML Color String",
             "description": "A color string as used in HTML",
             "possibleValues": [
                 "#ffffff",
@@ -2286,6 +2288,144 @@
                 "Down",
                 "Left",
                 "Right"
+            ]
+        },
+        {
+            "name": "-",
+            "description": "This argument is undefined",
+            "possibleValues": []
+        },
+        {
+            "name": "BSMLValue",
+            "description": "A BSMLValue is any C# field name on your host object, or any method pair prefixed with get_ and set_",
+            "possibleValues": [
+                "DECLARE_INSTANCE_FIELD(UnityEngine::Color, userColor);", "DECLARE_INSTANCE_METHOD(List<StringW>*, get_list);",  "DECLARE_INSTANCE_METHOD(void, set_list, List<StringW>* value);"
+            ]
+        },
+        {
+            "name": "BSMLValue ID (T)",
+            "description": "A BSML Value ID that points to a T, where T is related to the tag you are using",
+            "possibleValues": [
+                "saberLength", "theColor", "theTexture"
+            ]
+        },
+        {
+            "name": "BSMLValue ID (List<IconSegmentedControl::DataItem*>*)",
+            "description": "A BSML Value ID that points to a List<IconSegmentedControl::DataItem*>*",
+            "possibleValues": [
+                "MyIconList", "SelectionIcons", "LeaderboardIcons"
+            ]
+        },
+        {
+            "name": "BSMLValue ID (List<Il2CppObject*>*)",
+            "description": "A BSML Value ID that points to a List<Il2CppObject*>*",
+            "possibleValues": [
+                "CustomCellData"
+            ]
+        },
+        {
+            "name": "BSMLValue ID (List<BSML::CustomCellInfo*>*)",
+            "description": "A BSML Value ID that points to a List<BSML::CustomCellInfo*>*",
+            "possibleValues": [
+                "TextureListCellData", "PlaylistCellData"
+            ]
+        },
+        {
+            "name": "BSMLValue ID (Color)",
+            "description": "A BSML Value ID that points to a Color",
+            "possibleValues": [
+                "SetBloqColor", "BloqColorUpdated"
+            ]
+        },
+        {
+            "name": "BSMLValue ID (StringW)",
+            "description": "A BSML Value ID that points to a StringW",
+            "possibleValues": [
+                "username", "url", "searchvalue"
+            ]
+        },
+        {
+            "name": "BSMLValue ID (List<StringW>*)",
+            "description": "A BSML Value ID that points to a List<StringW>*",
+            "possibleValues": [
+                "segmentedTexts", "tabs"
+            ]
+        },
+        {
+            "name": "BSMLValue ID (Il2CppObject*)",
+            "description": "A BSML Value ID that points to a Il2CppObject*",
+            "possibleValues": [
+                "hostForList", "hostForModal"
+            ]
+        },
+        {
+            "name": "BSMLValue ID (bool)",
+            "description": "A BSML Value ID that points to a bool",
+            "possibleValues": [
+                "makeModal", "makeStringSetting"
+            ]
+        },
+        {
+            "name": "BSMLValue ID (Transform*)",
+            "description": "A BSML Value ID that points to a Transform*",
+            "possibleValues": [
+                "vanillaSettingsTransorm", "transformToReparent"
+            ]
+        },
+        {
+            "name": "BSMLValue ID (List<Transform*>*)",
+            "description": "A BSML Value ID that points to a List<Transform*>*",
+            "possibleValues": [
+                "vanillaTransforms", "transformsToReparent"
+            ]
+        },
+        {
+            "name": "BSMLAction",
+            "description": "A BSMLAction is any C# method on your host object, or any special id#method from the components, like list#PageUp",
+            "possibleValues": [
+                "DECLARE_INSTANCE_METHOD(void, OnLengthChanged, float value);", "DECLARE_INSTANCE_METHOD(void, OnSelectCell, HMUI::TableView* tableView, int idx);"
+            ]
+        },
+        {
+            "name": "BSMLAction ID (void(T))",
+            "description": "A BSML Action ID or Methodname that would run a void (T) method where T is related to the tag you are using",
+            "possibleValues": [
+                "ChangeSaberLength", "OnChangeColor", "UpdateTextureList"
+            ]
+        },
+        {
+            "name": "BSMLAction ID (void(void))",
+            "description": "A BSML Action ID or Methodname that would run a void (void) method",
+            "possibleValues": [
+                "ClickProfileImage", "ClickApplyButton", "list#PageUp"
+            ]
+        },
+        {
+            "name": "BSMLAction ID (void(TableView*, int))",
+            "description": "A BSML Action ID or Methodname that would run a void (TableView*, int) method",
+            "possibleValues": [
+                "CellWasSelected"
+            ]
+        },
+        {
+            "name": "BSMLAction ID (void(Color))",
+            "description": "A BSML Action ID or Methodname that would run a void (Color) method",
+            "possibleValues": [
+                "ColorChanged", "ColorSelected"
+            ]
+        },
+        {
+            "name": "BSMLAction ID (void(StringW))",
+            "description": "A BSML Action ID or Methodname that would run a void (StringW) method",
+            "possibleValues": [
+                "EnterUser", "SearchForSongHash"
+            ]
+        },
+        {
+            "name": "BSMLAction ID (void(SegmentedControl*, int))",
+            "description": "A BSML Action ID or Methodname that would run a void (SegmentedControl*, int) method",
+            "possibleValues": [
+                "SegmentSelected", "SelectedTab"
             ]
         }
     ]
