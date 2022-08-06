@@ -47,7 +47,7 @@ body {
       width: 100vw !important;
     }
     @media screen and (min-width:1080px) {
-      min-width: 1080px !important
+      width: 1080px !important
     }
     
     height: 100%;
@@ -81,7 +81,11 @@ body {
     display: flex;
     align-items: center;
     margin-left: 1rem;
-
+    .sidebar-logo {
+      width: 3rem;
+      height: 3rem;
+      margin-right: .3rem
+    }
   }
 
   .main-body {

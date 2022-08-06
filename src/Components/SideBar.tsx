@@ -10,10 +10,7 @@ export default function SideBar() {
         <ProSidebar>
             <SidebarHeader>
                 <div className='sidebar-header'>
-                    <img src='BSQML.png' alt='Logo' style={{
-                        width: '3rem',
-                        height: '3rem',
-                    }}/>
+                    <img src='BSQML.png' alt='Logo' className='sidebar-logo'/>
                     Quest BSML Docs
                 </div>
             </SidebarHeader>
