@@ -1,5 +1,5 @@
 import docs from '../assets/docs.json'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link, Path } from 'react-router-dom'
 import '../styles/App.scss'
 import Title from './Title'
 import Aliases from './Aliases'
@@ -42,8 +42,18 @@ export default function Tag() {
                                                 { component.typename }
                                             </Link>
                                         </div>
+                                        <div className='componentDescription'>
+                                            {component.description}
+                                        </div>
                                         { component.properties.map(
-                                            p => <Property aliases={p.aliases} type={p.type} description={p.description}/>
+                                            p => {
+                                                let linkedType = docs.arguments.find(a => a.name === p.type);
+                                                return (
+                                                    linkedType != null ? 
+                                                    <Property aliases={p.aliases} type={p.type} description={p.description} typelink={'/arguments/' + linkedType.name}/> :
+                                                    <Property aliases={p.aliases} type={p.type} description={p.description}/>
+                                                )
+                                        }
                                         )}
                                     </div>
                                 )

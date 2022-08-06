@@ -2142,5 +2142,151 @@
             ],
             "description": "A Beat Saber UI Component to handle selecting different pieces of text (Difficulty select)"
         }
+    ],
+    "arguments": [
+        {
+            "name": "bool",
+            "description": "Boolean value",
+            "possibleValues": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "name": "string",
+            "description": "Text value",
+            "possibleValues": [
+                "..."
+            ]
+        },
+        {
+            "name": "float",
+            "description": "Decimal value",
+            "possibleValues": [
+                "numeric"
+            ]
+        },
+        {
+            "name": "int",
+            "description": "Integer value",
+            "possibleValues": [
+                "..."
+            ]
+        },
+        {
+            "name": "HTML ColorString",
+            "description": "A color string as used in HTML",
+            "possibleValues": [
+                "#ffffff",
+                "red",
+                "rgb(255, 255, 255)"
+            ]
+        },
+        {
+            "name": "enum TMPro::TextAlignmentOptions",
+            "description": "Text Alignment enum from TMPro",
+            "possibleValues": [
+                "TopLeft",
+                "Top",
+                "TopRight",
+                "TopJustified",
+                "TopFlush",
+                "TopGeoAligned",
+                "Left",
+                "Center",
+                "Right",
+                "Justified",
+                "Flush",
+                "CenterGeoAligned",
+                "BottomLeft",
+                "Bottom",
+                "BottomRight",
+                "BottomJustified",
+                "BottomFlush",
+                "BottomGeoAligned",
+                "BaselineLeft",
+                "Baseline",
+                "BaselineRight",
+                "BaselineJustified",
+                "BaselineFlush",
+                "BaselineGeoAligned",
+                "MidlineLeft",
+                "Midline",
+                "MidlineRight",
+                "MidlineJustified",
+                "MidlineFlush",
+                "MidlineGeoAligned",
+                "CaplineLeft",
+                "Capline",
+                "CaplineRight",
+                "CaplineJustified",
+                "CaplineFlush",
+                "CaplineGeoAligned"
+            ]
+        },
+        {
+            "name": "enum TMPro::TextOverflowModes",
+            "description": "Text Overflow mode enum from TMPro",
+            "possibleValues": [
+                "Overflow",
+                "Ellipsis",
+                "Masking",
+                "Truncate",
+                "ScrollRect",
+                "Page",
+                "Linked"
+            ]
+        },
+        {
+            "name": "enum ContentSizeFitter::Fitmode",
+            "description": "Fit Mode enum from UnityEngine",
+            "possibleValues": [
+                "Unconstrained",
+                "MinSize",
+                "PreferredSize"
+            ]
+        },
+        {
+            "name": "enum TableView::TableType",
+            "description": "Table Type enum from HMUI",
+            "possibleValues": [
+                "Horizontal",
+                "Vertical"
+            ]
+        },
+        {
+            "name": "enum CustomListTableData::ListStyle",
+            "description": "List Style enum from BSML",
+            "possibleValues": [
+                "List",
+                "Box",
+                "Simple"
+            ]
+        },
+        {
+            "name": "enum UnityEngine::TextAnchor",
+            "description": "Text Anchor enum from UnityEngine",
+            "possibleValues": [
+                "UpperLeft",
+                "UpperCenter",
+                "UpperRight",
+                "MiddleLeft",
+                "MiddleCenter",
+                "MiddleRight",
+                "LowerLeft",
+                "LowerCenter",
+                "LowerRight"
+            ]
+        },
+        {
+            "name": "enum PageButtonDirection",
+            "description": "Page button rotation enum from BSML",
+            "possibleValues": [
+                "Up",
+                "Down",
+                "Left",
+                "Right"
+            ]
+        }
     ]
 }

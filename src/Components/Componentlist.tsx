@@ -7,7 +7,7 @@ export default function ComponentList() {
     return (
         <div className='main-body'>
             <div className='main-content'>
-                <Title title="All Macros" description={components.length + " Components"}/>
+                <Title title="All Components" description={components.length + " Components"}/>
                 {
                     components.map(c => {
                         return (

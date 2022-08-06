@@ -47,6 +47,17 @@ export default function SideBar() {
                             )
                         }) }
                     </SubMenu>
+                    <SubMenu title="Arguments">
+                        <MenuItem>All Arguments<Link to='/arguments'/></MenuItem>
+                        { docs.arguments.sort((a, b) => a.name.localeCompare(b.name)).map(a => {
+                            return (
+                                <MenuItem> 
+                                    {a.name}
+                                    <Link to={"/arguments/" + a.name}/>
+                                </MenuItem>
+                            )
+                        }) }
+                    </SubMenu>
                 </Menu>
             </SidebarContent>
             <SidebarFooter>

@@ -6,6 +6,8 @@ import Macro from './Components/Macro'
 import MacroList from './Components/MacroList'
 import Component from './Components/Component'
 import ComponentList from './Components/ComponentList'
+import Argument from './Components/Argument'
+import ArgumentList from './Components/ArgumentList'
 import Home from './Components/Home'
 import './styles/App.scss';
 
@@ -21,6 +23,8 @@ export default function App() {
                     <Route path='macros/:macro' element={<Macro/>}/>
                     <Route path='components' element={<ComponentList/>}/>
                     <Route path='components/:component' element={<Component/>}/>
+                    <Route path='arguments' element={<ArgumentList/>}/>
+                    <Route path='arguments/:argument' element={<Argument/>}/>
                 </Route>
             </Routes>
         </BrowserRouter>
