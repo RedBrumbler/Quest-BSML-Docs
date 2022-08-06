@@ -14,19 +14,13 @@ body {
   height: 100vh;
   color: #353535;
   font-family: 'Roboto', sans-serif;
-
-  transition: all .25s linear; 
-  -o-transition: all .25s linear; 
-  -moz-transition: all .25s linear; 
-  -webkit-transition: all .25s linear; 
 }
 
 
 
 #root {
   height: 100%;
-  background: linear-gradient(90deg, #04031c 10% 55%, #070626 55% 30%);
-  
+  background: linear-gradient(90deg, #04031c 0% 50%, #070626 50% 0%);
 
   ::-webkit-scrollbar {
     width: 0px;
@@ -51,7 +45,7 @@ body {
 }
 
 .main-body {
-  color: white;
+  color: #b3b8d4;
   background-color: #070626;
   height: 100%;
   flex-grow: 1;
@@ -62,7 +56,7 @@ body {
   .main-content {
     margin-left: 2rem;
     margin-right: 2rem;
-    border-radius: .2rem;
+    border-radius: .5rem;
 
     .spacer {
       background-color: rgba(255, 255, 255, 0.20);
@@ -72,49 +66,65 @@ body {
     .link {
       color: #b3b8d4;
       text-decoration: none;
+      border-bottom: 1px dotted #b3b8d4;
       &:hover {
         color: #dee2ec;
       }
     }
 
+    .aliasesTitle {
+      color: #b3b8d4;
+      font-size: 1.3rem;
+    }
+
     .aliases {
-      background-color: rgb(9, 8, 52);
-      border-radius: .2rem;
+      display: inline-block;
+      border-radius: .5rem;
     }
 
     .alias {
       display: inline-block;
       background-color: rgb(40, 113, 231);
       color: rgb(0, 0, 0);
-      padding: 0.2rem;
+      padding: 0.2rem .5rem 0.2rem .5rem;
       margin: .2rem;
       font-size: .8rem;
-      border-radius: .2rem;
+      border-radius: .5rem;
+
+      .link {
+        color: #0f0f0f;
+        border-bottom: 1px dotted #0f0f0f;
+      &:hover {
+          color: #dee2ec;
+        }
+      }
     }
 
     .type {
       display: inline-block;
       background-color: rgb(34, 204, 128);
       color: rgb(0, 0, 0);
-      padding: 0.2rem;
+      padding: 0.2rem .5rem 0.2rem .5rem;
       margin: .2rem;
       font-size: .8rem;
-      border-radius: .2rem;
+      border-radius: .5rem;
     }
 
     .component {
       background-color: rgb(9, 8, 52);
+      line-height: 1rem;
       padding: 0.5rem;
       margin: 1rem;
+      border-radius: .5rem;
     }
 
     .componentName {
-
+      font-size: 1.3rem;
     }
 
 
     .description {
-    
+      padding-top: .5rem;
     }
 
     .key {
@@ -124,8 +134,8 @@ body {
     .property {
       background-color: rgba(255, 255, 255, 0.05);
       padding: 0.5rem;
-      margin-bottom: 1rem;
-      border-radius: .2rem;
+      border-radius: .5rem;
+      margin-top: 1.5rem;
     }
   }
 }

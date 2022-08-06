@@ -29,13 +29,11 @@ export default function Taglist() {
                     <p>{ docTag.description }</p>
                 </header>
                 <div className='spacer'/>
-                <div className='aliases'>
-                    <h3>
-                        Aliases
-                    </h3>
-                    { docTag.aliases.map(alias => { return (<span className='alias'><Link className='link' to={'/tags/' + alias}>{alias} </Link></span>)}) }
+                <div className='property'>
+                    <span className='aliasesTitle'> Aliases: </span>
+                    <span className='aliases'>{ docTag.aliases.map(alias => { return (<div className='alias'><Link className='link' to={'/tags/' + alias}>{alias} </Link></div>)}) }</span>
+                    <div className='spacer'/>
                 </div>
-                <div className='spacer'/>
                 <div className='components'>
                     {
                         docTag.components.map(
@@ -47,16 +45,16 @@ export default function Taglist() {
 
                                 return (
                                     <div className='component'>
-                                        <h3 className='componentName'>
+                                        <div className='componentName'>
                                             <Link className='link' to={'/components/' + component.typename}>
                                                 { component.typename }
                                             </Link>
-                                        </h3>
+                                        </div>
                                         { component.properties.map(
                                             p => {
                                                 return (
                                                 <div className='property'>
-                                                    <span className="aliases">{ p.aliases.map(alias => { return (<span className="alias">{alias}</span>)}) }</span>
+                                                    <div className="aliases">{ p.aliases.map(alias => { return (<div className="alias">{alias}</div>)}) }</div>
                                                     <span className="type">{p.type}</span>
                                                     <div className="description">{p.description}</div>
                                                     <div className='spacer'/>
