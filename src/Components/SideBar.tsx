@@ -3,11 +3,19 @@ import { ProSidebar, Menu, MenuItem, SubMenu, SidebarHeader, SidebarContent, Sid
 import {Link} from 'react-router-dom';
 import '../styles/App.scss'
 
+import { FaGithub } from 'react-icons/fa';
+
 export default function SideBar() {
     return (
         <ProSidebar>
             <SidebarHeader>
-                Quest BSML Docs
+                <div className='sidebar-header'>
+                    <img src='BSQML.png' alt='Logo' style={{
+                        width: '3rem',
+                        height: '3rem',
+                    }}/>
+                    Quest BSML Docs
+                </div>
             </SidebarHeader>
             <SidebarContent>
                 <Menu iconShape='square'>
@@ -60,14 +68,20 @@ export default function SideBar() {
                 </Menu>
             </SidebarContent>
             <SidebarFooter>
-                <a 
-                    href="https://github.com/RedBrumbler/Quest-BSML" 
-                    target='_blank'
-                    className="sidebar-btn"
-                    rel="noopener noreferrer"
-                > 
-                Visit the Github Repo! 
-                </a>
+                <div className='sidebar-btn-wrapper'>
+                    <a
+                        href="https://github.com/RedBrumbler/Quest-BSML" 
+                        target='_blank'
+                        className="sidebar-btn"
+                        rel="noopener noreferrer">
+                        <FaGithub style={{width: '3rem', height: '3rem'}}/>
+                        <span style={{
+                            margin: '1rem'
+                        }}>
+                            View source 
+                        </span>
+                    </a>
+                </div>
             </SidebarFooter>
         </ProSidebar>
         )

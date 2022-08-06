@@ -15,6 +15,7 @@ $transition-color: #04031c;
 $spacer-color: rgba(255, 255, 255, 0.20);
 $alias-color: rgb(40, 113, 231);
 $link-and-text-color: #b3b8d4;
+$link-hover-color: #dee2ec;
 $property-bg-color: rgba(255, 255, 255, 0.05);
 $link-color: #0f0f0f;
 $primitive-type: rgb(34, 204, 128);
@@ -59,126 +60,153 @@ body {
   height: 100%;
   display: flex;
   position: relative;
-}
 
-.main-body {
-  color: $link-and-text-color;
-  background-color: $bg-color;
-  height: 100%;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;
-
-  .main-content {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    border-radius: .5rem;
-
-    .spacer {
-      background-color: $spacer-color;
-      height: .1rem;
-    }
-
-    .link {
+  .sidebar-btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: .4rem;
+    margin-bottom: .8rem;
+    .sidebar-btn {
+      display: flex;
       color: $link-and-text-color;
-      text-decoration: none;
-      border-bottom: 1px dotted $link-and-text-color;
+      align-items: center;
       &:hover {
-        color: #dee2ec;
+        color: $link-hover-color;
       }
     }
+  }
 
-    .aliasesTitle {
-      color: $link-and-text-color;
-      font-size: 1.3rem;
-    }
+  .sidebar-header {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
 
-    .aliases {
-      display: inline-block;
+  }
+
+  .main-body {
+    color: $link-and-text-color;
+    background-color: $bg-color;
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+
+    .main-content {
+      margin-left: 2rem;
+      margin-right: 2rem;
       border-radius: .5rem;
-    }
 
-    .alias {
-      display: inline-block;
-      background-color: $alias-color;
-      color: $black;
-      padding: 0.2rem .5rem 0.2rem .5rem;
-      margin: .2rem;
-      font-size: .8rem;
-      border-radius: .5rem;
-
-      .link {
-        color: $link-color;
-        border-bottom: 1px dotted $link-color;
-      &:hover {
-          color: #dee2ec;
-        }
+      .spacer {
+        background-color: $spacer-color;
+        height: .1rem;
       }
-    }
-
-    .type {
-      display: inline-block;
-      background-color: $primitive-type;
-      color: $black;
-      padding: 0.2rem .5rem 0.2rem .5rem;
-      margin: .2rem;
-      font-size: .8rem;
-      border-radius: .5rem;
 
       .link {
-        color: $link-color;
+        color: $link-and-text-color;
         text-decoration: none;
-        border-bottom: 1px dotted $link-color;
-      &:hover {
-          color: #dee2ec;
+        border-bottom: 1px dotted $link-and-text-color;
+        &:hover {
+          color: $link-hover-color;
         }
       }
-    }
 
-    .component {
-      background-color: $component-bg-color;
-      line-height: 1rem;
-      padding: 0.5rem;
-      margin: 1rem;
-      border-radius: .5rem;
-    }
+      .aliasesTitle {
+        color: $link-and-text-color;
+        font-size: 1.3rem;
+      }
 
-    .componentName {
-      font-size: 1.3rem;
-      line-height: 1.5rem;
-    }
+      .aliases {
+        display: inline-block;
+        border-radius: .5rem;
+      }
 
-    .componentDescription {
-      padding-top: 1rem;
-      line-height: 1rem;
-    }
+      .alias {
+        display: inline-block;
+        background-color: $alias-color;
+        color: $black;
+        padding: 0.2rem .5rem 0.2rem .5rem;
+        margin: .2rem;
+        font-size: .8rem;
+        border-radius: .5rem;
+
+        .link {
+          color: $link-color;
+          border-bottom: 1px dotted $link-color;
+        &:hover {
+            color: $link-hover-color;
+          }
+        }
+      }
+
+      .type {
+        display: inline-block;
+        background-color: $primitive-type;
+        color: $black;
+        padding: 0.2rem .5rem 0.2rem .5rem;
+        margin: .2rem;
+        font-size: .8rem;
+        border-radius: .5rem;
+
+        .link {
+          color: $link-color;
+          text-decoration: none;
+          border-bottom: 1px dotted $link-color;
+        &:hover {
+            color: $link-hover-color;
+          }
+        }
+      }
+
+      .component {
+        background-color: $component-bg-color;
+        line-height: 1rem;
+        padding: 0.5rem;
+        margin: 1rem;
+        border-radius: .5rem;
+      }
+
+      .componentName {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+      }
+
+      .componentDescription {
+        padding-top: 1rem;
+        line-height: 1rem;
+      }
 
 
-    .description {
-      padding-top: .5rem;
-    }
+      .description {
+        padding-top: .5rem;
+      }
 
-    .key {
-      display: inline-block;
-    }
+      .key {
+        display: inline-block;
+      }
 
-    .property {
-      background-color: $property-bg-color;
-      padding: 0.5rem;
-      border-radius: .5rem;
-      margin-top: 1.5rem;
-    }
+      .property {
+        background-color: $property-bg-color;
+        padding: 0.5rem;
+        border-radius: .5rem;
+        margin-top: 1.5rem;
+      }
 
-    .argument {
-      margin-top: 1rem;
-    }
-    .argumentName {
-      background-color: $argument-color;
-      color: $black;
-      padding: 0.3rem;
-      border-radius: .5rem;
-      margin-top: 1.5rem;
+      .argument {
+        margin-top: 1rem;
+      }
+      .argumentName {
+        background-color: $argument-color;
+        color: $black;
+        padding: 0.3rem;
+        border-radius: .5rem;
+        margin-top: 1.5rem;
+      }
+
+      .homepage {
+        width: 100%
+      }
     }
   }
 }
