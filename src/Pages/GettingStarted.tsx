@@ -1,8 +1,14 @@
-import Title from '../Components/Title'
-import SubTitle from '../Components/SubTitle'
-import Command from '../Components/Command'
-import Code from '../Components/Code'
-import CodeBlock from 'react-copy-code'
+import Title from '../Components/Title';
+import SubTitle from '../Components/SubTitle';
+import Command from '../Components/Command';
+import Code from '../Components/Code';
+import ReactMarkdown from 'react-markdown';
+
+const codeblock = `~~~
+namespace BSML {
+    void Init();
+}
+~~~`;
 
 export default function GettingStarted() {
     return (
@@ -36,9 +42,9 @@ export default function GettingStarted() {
                     Within this header, you will find a few methods that will prove useful for you.
                     These methods are as follows:
 
-                    <Code>
-                        SHOW BSML.HPP HERE BUT IDFK HOW SO THIS IS A PLACEHOLDER
-                    </Code>
+                    <ReactMarkdown>
+                        {codeblock}
+                    </ReactMarkdown>
 
                     The Init method just initializes BSML so that hooks it needs are installed and types are registered, though the other methods implicitly call this too.
 
