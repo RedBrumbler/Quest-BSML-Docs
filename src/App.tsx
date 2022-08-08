@@ -11,6 +11,7 @@ import ArgumentList from './Pages/ArgumentList'
 import Home from './Pages/Home'
 import Unknown from './Pages/Unknown'
 import GettingStarted from './Pages/GettingStarted'
+import DataCache from './Pages/DataCache'
 import './styles/App.scss';
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
                     <Route index element={<Home/>}/>
                     <Route path='home' element={<Home/>}/>
                     <Route path='getting-started' element={<GettingStarted/>}/>
+                    <Route path='data-cache' element={<DataCache/>}/>
                     <Route path='tags' element={<TagList/>}/>
                     <Route path='tags/:tag' element={<Tag/>}/>
                     <Route path='macros' element={<MacroList/>}/>

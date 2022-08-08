@@ -7,8 +7,8 @@ export default function Home() {
             <div className='main-content'>
                 <Title title='Quest BSML Docs'/>
                 <p className='homepage'>
-                    Welcome to the BSML Docs for the quest version!
-                    If you're new here, you should start by taking a look at <Link className='link' to='/getting-started'> Getting started </Link>.
+                    Welcome to the BSML Docs for the quest version!<br/>
+                    If you're new here, you should start by taking a look at <Link className='link' to='/getting-started'> Getting started </Link>.<br/>
                     If you are just looking to use the libary, you can take a look at <Link className='link' to='/tags'> the tags </Link> available in the library.
                 </p>
             </div>

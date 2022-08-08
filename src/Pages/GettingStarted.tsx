@@ -2,13 +2,14 @@ import Title from '../Components/Title';
 import SubTitle from '../Components/SubTitle';
 import Command from '../Components/Command';
 import Code from '../Components/Code';
+import CodeBlock from '../Components/CodeBlock';
 import ReactMarkdown from 'react-markdown';
+import { BSML } from '../assets/BSML';
+import { HotReloadViewControllerHeader, HotReloadViewControllerSource} from '../assets/HotReloadViewController';
+import { ViewExample } from '../assets/ViewExample';
+import React from 'react';
 
-const codeblock = `~~~
-namespace BSML {
-    void Init();
-}
-~~~`;
+
 
 export default function GettingStarted() {
     return (
@@ -35,16 +36,12 @@ export default function GettingStarted() {
                 <p>
                     Now that you have the library usable in your mod, you can start using it.
                     It's as easy as adding the include to your view controller:
-                    <Code>
-                        #include "bsml/shared/BSML.hpp"
-                    </Code>
+                    <CodeBlock value = '#include "bsml/shared/BSML.hpp"'/>
 
                     Within this header, you will find a few methods that will prove useful for you.
                     These methods are as follows:
 
-                    <ReactMarkdown>
-                        {codeblock}
-                    </ReactMarkdown>
+                    <CodeBlock value={BSML} language='cpp'/>
 
                     The Init method just initializes BSML so that hooks it needs are installed and types are registered, though the other methods implicitly call this too.
 
@@ -59,24 +56,11 @@ export default function GettingStarted() {
 
                     To use this, when declaring your View Controller for use with quest ui, you need to change a few things, most notably, you need to declare your class as inheriting a custom type, as well as defining the <code>Awake</code> method.
 
-                    <div className='code-block'>
-                        <pre><code>
-                            DECLARE_CLASS_CUSTOM(MyNamespace, ExampleViewController, BSML::HotReloadViewController,
-                                DECLARE_INSTANCE_METHOD(void, Awake);
-                            )
-                        </code></pre>
-                    </div>
+                    <CodeBlock value={HotReloadViewControllerHeader}/>
 
                     In the source Awake method, you can then set the filepath for the file that contains your BSML layout:
 
-                    <div className='code-block'>
-                        <pre><code>
-                        {/* I HATE IT HERE WHY CAN I NOT JUST EMBED SOME CODE AIDBGSDGBSFDIGHIWSGH */}
-                        {'void MyNamespace::ExampleViewController::Awake() {'}
-                            {'fileWatcher->filePath = "/sdcard/testview.bsml";'}
-                        {'}'}
-                        </code></pre>
-                    </div>
+                    <CodeBlock value={HotReloadViewControllerSource}/>
 
                     Then updating the view is as simple as pushing the file to your quest and waiting a bit. The file checker checks every 10 seconds for changes in the file, though this is configurable via {'fileWatcher->checkInterval'}
                     
@@ -95,18 +79,7 @@ export default function GettingStarted() {
                     If you add the xml schema from the docs here to your XML it should also auto complete all the values for you, making usage extremely simple and easy to understand as usable values should be auto completed for you.
 
                     Here is a simple example of a view:
-                    <Code>
-                        {/* I still hate it here how I can't show proper code :) */}
-                        {"<vertical child-control-height='false'>"}
-                            {"<horizontal bg='panel-top' pad-left='10' pad-right='10' horizontal-fit='PreferredSize'>"}
-                                {"<text text='Example' align='Center' font-size='10'></text>"}
-                            {"</horizontal>"}
-                            {"<horizontal bg='round-rect-panel' pad='8'>"}
-                                {"<text text='Looks at this fancy text.'></text>"}
-                            {"</horizontal>"}
-                            {"<button text='Test Button'></button>"}
-                        {"</vertical>"}
-                    </Code>
+                    <CodeBlock value={ViewExample} language='xml'/>
 
                     Here's how this would look in game:
                     {/* TODO */}

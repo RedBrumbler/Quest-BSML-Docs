@@ -229,23 +229,6 @@ body {
           }
         }
       }
-
-      .code-block {
-        display: block;
-        .code-title {
-
-        }
-
-        code {
-          display: block;
-          background-color: $property-bg-color;
-          padding: 0.5rem;
-          margin: 1rem;
-          border-radius: .5rem;;
-          min-height: 5rem;
-          
-        }
-      }
     }
   }
 }

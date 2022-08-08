@@ -16,7 +16,11 @@ export default function SideBar() {
             </SidebarHeader>
             <SidebarContent>
                 <Menu iconShape='square'>
-                    <MenuItem>Home<Link to='/home'/></MenuItem>
+                    <SubMenu title="Home">
+                        <MenuItem>Home Page<Link to='/home'/></MenuItem>
+                        <MenuItem>Getting Started<Link to='/getting-started'/></MenuItem>
+                        <MenuItem>Data Cache<Link to='/data-cache'/></MenuItem>
+                    </SubMenu>
                     <SubMenu title="Tags">
                         <MenuItem>All Tags<Link to='/tags'/></MenuItem>
                         { docs.tags.sort((a, b) => a.name.localeCompare(b.name)).map(t => {
