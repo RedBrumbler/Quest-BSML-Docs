@@ -4,7 +4,7 @@ exampleString:
     <text text='Click to reload textures:' align='Center'/>
     <action-button label='Reload Textures' on-click='ReloadTextures'/>
 </vertical>`,
-exampleImage: `Examples/ActionButton.jpg`
+exampleImage: `ActionButton.jpg`
 };
 
 export const Background = {
@@ -15,7 +15,7 @@ export const Background = {
     </bg>
     <action-button label='Reload Textures' on-click='ReloadTextures'/>
 </vertical>`,
-    exampleImage: `Examples/Background.jpg`
+    exampleImage: `Background.jpg`
 };
 
 export const Button = {
@@ -24,7 +24,7 @@ export const Button = {
     <text text='Click to reload textures:' align='Center'/>
     <button label='Reload Textures' on-click='ReloadTextures'/>
 </vertical>`,
-    exampleImage: `Examples/Button.jpg`
+    exampleImage: `Button.jpg`
 };
 
 export const ButtonWithIcon = {
@@ -33,7 +33,7 @@ export const ButtonWithIcon = {
     <text text='Click to reload textures:' align='Center'/>
     <button-with-icon src='#ReloadIcon' on-click='ReloadTextures'/>
 </vertical>`,
-    exampleImage: `Examples/ButtonWithIcon.jpg`
+    exampleImage: `ButtonWithIcon.jpg`
 };
 
 export const ClickableImage = {
@@ -44,7 +44,7 @@ export const ClickableImage = {
         <clickable-image src='#ReloadIcon' on-click='ReloadTextures'/>
     </stack>
 </vertical>`,
-    exampleImage: `Examples/ClickableImage.jpg`
+    exampleImage: `ClickableImage.jpg`
 }
 
 export const ClickableText = {
@@ -52,7 +52,7 @@ export const ClickableText = {
 `<vertical pref-width='60' pref-height='30' bg='round-rect-panel' vertical-fit='PreferredSize'>
     <clickable-text text='Click to reload textures:' on-click='ReloadTextures'/>
 </vertical>`,
-    exampleImage: `Examples/ClickableText.jpg`
+    exampleImage: `ClickableText.jpg`
 }
 
 export const ColorSetting = {
@@ -60,7 +60,7 @@ export const ColorSetting = {
 `<vertical pref-width='60' pref-height='30' bg='round-rect-panel' vertical-fit='PreferredSize' pad='2'>
     <color-setting label='Saber Color' on-change='SaberColorPicked' apply-on-change='true'/>
 </vertical>`,
-    exampleImage: `Examples/ColorSetting.jpg`
+    exampleImage: `ColorSetting.jpg`
 }
 
 export const CustomList = {
@@ -77,7 +77,7 @@ export const CustomList = {
         </custom-list>
     </vertical>
 </bg>`,
-    exampleImage: `Examples/DropdownListSetting.jpg`
+    exampleImage: `DropdownListSetting.jpg`
 }
 
 export const DropdownListSetting = {
@@ -85,7 +85,7 @@ export const DropdownListSetting = {
 `<vertical pref-width='60' pref-height='30' bg='round-rect-panel' vertical-fit='PreferredSize' pad='2'>
     <dropdown-list-setting label='TrailType' options='trailTypes' on-change='TrailTypeChosen'/>
 </vertical>`,
-    exampleImage: `Examples/DropdownListSetting.jpg`
+    exampleImage: `DropdownListSetting.jpg`
 }
 
 export const Grid = {
@@ -101,7 +101,7 @@ export const Grid = {
         <text text='cell' align='Center'/>
     </macro.repeat>
 </grid>`,
-    exampleImage: `Examples/Grid.jpg`
+    exampleImage: `Grid.jpg`
 }
 
 export const Horizontal = {
@@ -111,7 +111,7 @@ export const Horizontal = {
         <text text='cell' align='Center'/>
     </macro.repeat>
 </horizontal>`,
-    exampleImage: `Examples/Horizontal.jpg`
+    exampleImage: `Horizontal.jpg`
 }
 
 export const IconSegments = {
@@ -119,7 +119,7 @@ export const IconSegments = {
 `<vertical pref-width='40' pref-height='10' bg='round-rect-panel' vertical-fit='PreferredSize' pad='2'>
     <icon-segments contents='segmentedIconData' select-cell='SelectedIcon'/>
 </vertical>`,
-    exampleImage: `Examples/IconSegments.jpg`
+    exampleImage: `IconSegments.jpg`
 }
 
 export const Image = {
@@ -129,7 +129,7 @@ export const Image = {
         <image src='#ReloadIcon' on-click='ReloadTextures'/>
     </stack>
 </vertical>`,
-    exampleImage: `Examples/Image.jpg`
+    exampleImage: `Image.jpg`
 }
 
 export const IncrementSetting = {
@@ -137,7 +137,7 @@ export const IncrementSetting = {
 `<vertical pref-width='60' pref-height='30' bg='round-rect-panel' vertical-fit='PreferredSize' pad='2'>
     <increment-setting label="Note Size" min='0.05' max='2' increment='0.05' digits='2' on-change='SetSize'/>
 </vertical>`,
-    exampleImage: `Examples/IncrementSetting.jpg`
+    exampleImage: `IncrementSetting.jpg`
 }
 
 export const LeaderBoard = {
@@ -145,7 +145,7 @@ export const LeaderBoard = {
 `<vertical  bg='round-rect-panel' pref-width='90' pref-height='65' vertical-fit='PreferredSize' pad='2'>
     <leaderboard id='lb'/>
 </vertical>`,
-    exampleImage: `Examples/LeaderBoard.jpg`
+    exampleImage: `LeaderBoard.jpg`
 }
 
 export const List = {
@@ -155,7 +155,7 @@ export const List = {
         <list content='listData' on-select='ItemSelected' show-scrollbar='true'/>
     </vertical>
 </bg>`,
-    exampleImage: `Examples/List.jpg`
+    exampleImage: `List.jpg`
 }
 
 export const ListSetting = {
@@ -163,7 +163,7 @@ export const ListSetting = {
 `<vertical pref-width='60' pref-height='30' bg='round-rect-panel' vertical-fit='PreferredSize' pad='2'>
     <list-setting label='Text' choices='lyrics' on-select='SelectedChoice'/>
 </vertical>`,
-    exampleImage: `Examples/ListSetting.jpg`
+    exampleImage: `ListSetting.jpg`
 }
 
 export const ListSliderSetting = {
@@ -171,7 +171,7 @@ export const ListSliderSetting = {
 `<vertical pref-width='60' pref-height='30' bg='round-rect-panel' vertical-fit='PreferredSize' pad='2'>
     <list-slider-setting label='Text' choices='lyrics' on-select='SelectedChoice'/>
 </vertical>`,
-    exampleImage: `Examples/ListSliderSetting.jpg`
+    exampleImage: `ListSliderSetting.jpg`
 }
 
 export const Loading = {
@@ -181,7 +181,7 @@ export const Loading = {
         <loading pref-width='20' pref-height='20' preserve-aspect='true'/>
     </stack>
 </vertical>`,
-    exampleImage: `Examples/Loading.jpg`
+    exampleImage: `Loading.jpg`
 }
 
 export const Modal = {
@@ -194,7 +194,7 @@ export const Modal = {
         </vertical>
     </modal>
 </vertical>`,
-    exampleImage: `Examples/Modal.jpg`
+    exampleImage: `Modal.jpg`
 }
 
 export const ModalColorPicker = {
@@ -220,7 +220,7 @@ export const Modifier = {
 `<vertical pref-width='60' pref-height='30' bg='round-rect-panel' vertical-fit='PreferredSize' pad='2'>
     <modifier label='Custom Modifier' on-chang='ModifierToggled'/>
 </vertical>`,
-    exampleImage: `Examples/Modifier.jpg`
+    exampleImage: `Modifier.jpg`
 }
 
 export const ModifierContainer = {
@@ -232,7 +232,7 @@ export const ModifierContainer = {
         </macro.repeat>
     </grid>
 </modifier-container>`,
-    exampleImage: `Examples/ModifierContainer.jpg`
+    exampleImage: `ModifierContainer.jpg`
 }
 
 export const PageButton = {
@@ -255,7 +255,7 @@ export const PageButton = {
         </macro.repeat>
     </scrollable-container>
 </bg>`,
-    exampleImage: `Examples/PageButton.jpg`
+    exampleImage: `PageButton.jpg`
 }
 
 export const RawImage = {
@@ -265,7 +265,7 @@ export const RawImage = {
         <raw-image src='#BillieEilishCover'/>
     </stack>
 </vertical>`,
-    exampleImage: `Examples/RawImage.jpg`
+    exampleImage: `RawImage.jpg`
 }
 
 export const ScrollIndicator = {
@@ -288,7 +288,7 @@ export const ScrollIndicator = {
         </macro.repeat>
     </scrollable-container>
 </bg>`,
-    exampleImage: `Examples/ScrollIndicator.jpg`
+    exampleImage: `ScrollIndicator.jpg`
 }
 
 export const ScrollView = {
@@ -300,7 +300,7 @@ export const ScrollView = {
         </macro.repeat>
     </scroll-view>
 </bg>`,
-    exampleImage: `Examples/ScrollView.jpg`
+    exampleImage: `ScrollView.jpg`
 }
 
 export const ScrollableContainer = {
@@ -323,7 +323,7 @@ export const ScrollableContainer = {
         </macro.repeat>
     </scrollable-container>
 </bg>`,
-    exampleImage: `Examples/ScrollableContainer.jpg`
+    exampleImage: `ScrollableContainer.jpg`
 }
 
 export const SettingsScrollView = {
@@ -335,7 +335,7 @@ export const SettingsScrollView = {
         </macro.repeat>
     </settings-scroll-view>
 </bg>`,
-    exampleImage: `Examples/SettingsScrollView.jpg`
+    exampleImage: `SettingsScrollView.jpg`
 }
 
 export const SliderSetting = {
@@ -343,7 +343,7 @@ export const SliderSetting = {
 `<vertical pref-width='60' pref-height='30' bg='round-rect-panel' vertical-fit='PreferredSize' pad='2'>
     <slider-setting label="Note Size" min='0.05' max='2' increment='0.05' digits='2' on-change='SetSize'/>
 </vertical>`,
-    exampleImage: `Examples/SliderSetting.jpg`
+    exampleImage: `SliderSetting.jpg`
 }
 
 export const Stack = {
@@ -354,7 +354,7 @@ export const Stack = {
         <text text='It is Time' align='Center'/>
     </stack>
 </vertical>`,
-    exampleImage: `Examples/Stack.jpg`
+    exampleImage: `Stack.jpg`
 }
 
 export const StringSetting = {
@@ -362,7 +362,7 @@ export const StringSetting = {
 `<vertical pref-width='60' pref-height='30' bg='round-rect-panel' vertical-fit='PreferredSize' pad='2'>
     <string-setting label="User name" on-change='SetUserName'/>
 </vertical>`,
-    exampleImage: `Examples/StringSetting.jpg`
+    exampleImage: `StringSetting.jpg`
 }
 
 export const Tab = {
@@ -379,7 +379,7 @@ export const Tab = {
         <text text='Third Tab' align='Center'/>
     </tab>
 </bg>`,
-    exampleImage: `Examples/Tab.jpg`
+    exampleImage: `Tab.jpg`
 }
 
 export const TabSelect = {
@@ -396,7 +396,7 @@ export const TabSelect = {
         <text text='Third Tab' align='Center'/>
     </tab>
 </bg>`,
-    exampleImage: `Examples/TabSelect.jpg`
+    exampleImage: `TabSelect.jpg`
 }
 
 export const Text = {
@@ -406,7 +406,7 @@ export const Text = {
     <img src='#CamelliaCover' preserve-aspect='true' pref-width='40' pref-height='40'/>
     <text text="it's camellia" align='Center' font-size='8'/>
 </vertical>`,
-    exampleImage: `Examples/Text.jpg`
+    exampleImage: `Text.jpg`
 }
 
 export const TextPage = {
@@ -416,7 +416,7 @@ export const TextPage = {
         <text-page text='Some large amount of text I do not have right now that I want people to scroll through' />
     </horizontal>
 </vertical>`,
-    exampleImage: `Examples/TextPage.jpg`
+    exampleImage: `TextPage.jpg`
 }
 
 export const TextSegments = {
@@ -424,7 +424,7 @@ export const TextSegments = {
 `<vertical pref-width='60' pref-height='30' bg='round-rect-panel' vertical-fit='PreferredSize' pad='2'>
     <text-segments contents='TextSegmentedItemList' select-cell='SelectedCell'/>
 </vertical>`,
-    exampleImage: `Examples/TextSegments.jpg`
+    exampleImage: `TextSegments.jpg`
 }
 
 export const ToggleSetting = {
@@ -432,7 +432,7 @@ export const ToggleSetting = {
 `<vertical pref-width='60' pref-height='30' bg='round-rect-panel' vertical-fit='PreferredSize' pad='2'>
     <toggle-setting label="Enable Mod" on-change='SetEnabled'/>
 </vertical>`,
-    exampleImage: `Examples/ToggleSetting.jpg`
+    exampleImage: `ToggleSetting.jpg`
 }
 
 export const Vertical = {
@@ -442,7 +442,7 @@ export const Vertical = {
         <text text='cell' align='Center'/>
     </macro.repeat>
 </vertical>`,
-    exampleImage: `Examples/Vertical.jpg`
+    exampleImage: `Vertical.jpg`
 }
 
 export const VerticalIconSegments = {
@@ -450,5 +450,5 @@ export const VerticalIconSegments = {
 `<vertical pref-width='60' pref-height='30' bg='round-rect-panel' vertical-fit='PreferredSize' pad='2'>
     <vertical-icon-segments contents='SegmentedIconData' select-cell='SelectedIcon'/>
 </vertical>`,
-    exampleImage: `Examples/VerticalIconSegments.jpg`
+    exampleImage: `VerticalIconSegments.jpg`
 }

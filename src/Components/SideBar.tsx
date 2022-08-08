@@ -10,7 +10,7 @@ export default function SideBar() {
         <ProSidebar>
             <SidebarHeader>
                 <div className='sidebar-header'>
-                    <img src='BSQML.png' alt='Logo' className='sidebar-logo'/>
+                    <img src='/BSQML.png' alt='Logo' className='sidebar-logo'/>
                     Quest BSML Docs
                 </div>
             </SidebarHeader>

@@ -250,6 +250,19 @@ body {
           }
         }
       }
+
+      .example-image-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        .example-image {
+          object-fit: contain;
+          width:120%;
+          height:120%;
+        }
+      }
     }
   }
 }

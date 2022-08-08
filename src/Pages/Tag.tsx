@@ -71,7 +71,7 @@ export default function Tag() {
                     <div className='usage-example'>
                         <SubTitle title="Usage Example"> Using <div className='alias'>{docTag.name}</div> </SubTitle>
                         <CodeBlock value={example.exampleString} language='xml'/>
-                        {example.exampleImage != null ? <img src={example.exampleImage} alt={docTag.name + ' In Game Result'}/> : <></>}
+                        {example.exampleImage != null ? <div className='example-image-wrapper'><img className='example-image' src={'/img/' + example.exampleImage} alt={docTag.name + ' In Game Result'}/></div> : <></>}
                     </div>
                     : <></>
                 }
