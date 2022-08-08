@@ -18,6 +18,7 @@ const CodeBlock: React.FC<Props> = ({ language, value }) => {
             customStyle={preStyles}
             wrapLines={true}
             showLineNumbers
+            className='code-block'
         >
             {value}
         </SyntaxHighlighter>

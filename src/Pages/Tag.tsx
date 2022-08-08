@@ -1,17 +1,21 @@
 import docs from '../assets/docs.json'
+import { TagExamples } from '../assets/Examples'
+
 import { useParams, Link, Path } from 'react-router-dom'
 import '../styles/App.scss'
 import Title from '../Components/Title'
+import SubTitle from '../Components/SubTitle'
 import Aliases from '../Components/Aliases'
 import Property from '../Components/Property'
+import CodeBlock from '../Components/CodeBlock'
 
 export default function Tag() {
     let { tag } = useParams();
     let docTag = docs.tags.find(t => {
         return t.aliases.find(t2 => t2 === tag) != null;
     });
-
-    if (docTag == null) {
+    
+    if (docTag == null || docTag == undefined) {
         return (
             <div className='main-body'>
                 <div className='main-content'>
@@ -20,6 +24,8 @@ export default function Tag() {
             </div>
         )
     }
+    let theName = docTag.name;
+    let example = TagExamples[theName];
 
     return (
         <div className='main-body'>
@@ -28,7 +34,7 @@ export default function Tag() {
                 {docTag.aliases.length > 1 ? <Aliases aliases={docTag.aliases.filter(t => t !== tag)} prefix='Aliases:'/> : <></>}
                 <div className='components'>
                     {
-                        docTag.components.map(
+                        docTag.components.sort().map(
                             c => {
                                 let component = docs.components.find(comp => comp.typename === c)
                                 if (component == null) {
@@ -61,6 +67,16 @@ export default function Tag() {
                         )
                     }
                 </div>
+                { example != null ? 
+                    <div className='usage-example'>
+                        <SubTitle title="Usage Example"> Using <div className='alias'>{docTag.name}</div> </SubTitle>
+                        <CodeBlock value={example.exampleString} language='xml'/>
+                        <img src={example.exampleString} alt={docTag.name + ' In Game Result'}/>
+                    </div>
+                    : <></>
+                }
+
+                <div style={{margin: '0 0 50vh 0'}}/>
             </div>
         </div>
     )

@@ -229,6 +229,27 @@ body {
           }
         }
       }
+
+      .code-block {
+        border-radius: .5rem;
+        background: $property-bg-color !important;
+        background-color: $property-bg-color !important;
+
+        .language-cpp {
+          background: rgba(255, 255, 255, 0) !important;
+          
+          .linenumber\ react-syntax-highlighter-line-number {
+            color: $link-and-text-color !important;
+          }
+        }
+        .language-xml {
+          background: rgba(255, 255, 255, 0) !important;
+          
+          .linenumber\ react-syntax-highlighter-line-number {
+            color: $link-and-text-color;
+          }
+        }
+      }
     }
   }
 }
