@@ -1,6 +1,6 @@
 import * as Examples from './BSMLExamples';
 
-const TagExamples: { [key: string]: { exampleString: string, exampleImage: string} } = {
+const TagExamples: { [key: string]: { exampleString: string, exampleImage?: string} } = {
     "action-button": Examples.ActionButton,
     "background": Examples.Background,
     "button": Examples.Button,

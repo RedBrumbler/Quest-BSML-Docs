@@ -1,7 +1,7 @@
 import docs from '../assets/docs.json'
 import { TagExamples } from '../assets/Examples'
 
-import { useParams, Link, Path } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import '../styles/App.scss'
 import Title from '../Components/Title'
 import SubTitle from '../Components/SubTitle'
@@ -15,7 +15,7 @@ export default function Tag() {
         return t.aliases.find(t2 => t2 === tag) != null;
     });
     
-    if (docTag == null || docTag == undefined) {
+    if (docTag === null || docTag === undefined) {
         return (
             <div className='main-body'>
                 <div className='main-content'>
@@ -71,7 +71,7 @@ export default function Tag() {
                     <div className='usage-example'>
                         <SubTitle title="Usage Example"> Using <div className='alias'>{docTag.name}</div> </SubTitle>
                         <CodeBlock value={example.exampleString} language='xml'/>
-                        <img src={example.exampleString} alt={docTag.name + ' In Game Result'}/>
+                        {example.exampleImage != null ? <img src={example.exampleImage} alt={docTag.name + ' In Game Result'}/> : <></>}
                     </div>
                     : <></>
                 }
