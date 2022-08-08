@@ -81,9 +81,7 @@ export default function GettingStarted() {
                     Here is a simple example of a view:
                     <CodeBlock value={ViewExample} language='xml'/>
 
-                    Here's how this would look in game:
-                    {/* TODO */}
-                    <img src='example.png' alt='Built view from example'/>
+                    <div className='example-image-wrapper'><img className='example-image' src='/Example.jpg' alt='Built view from example'/></div>
                 </p>
             </div>
         </div>
