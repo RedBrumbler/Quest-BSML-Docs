@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/docs/static/css/main.57568da6.css",
-    "main.js": "/docs/static/js/main.b8ccd82e.js",
-    "static/js/787.1a6c8dee.chunk.js": "/docs/static/js/787.1a6c8dee.chunk.js",
-    "index.html": "/docs/index.html",
-    "main.57568da6.css.map": "/docs/static/css/main.57568da6.css.map",
-    "main.b8ccd82e.js.map": "/docs/static/js/main.b8ccd82e.js.map",
-    "787.1a6c8dee.chunk.js.map": "/docs/static/js/787.1a6c8dee.chunk.js.map"
+    "main.css": "/Quest-BSML-Docs/static/css/main.57568da6.css",
+    "main.js": "/Quest-BSML-Docs/static/js/main.6727bfc9.js",
+    "static/js/787.1a6c8dee.chunk.js": "/Quest-BSML-Docs/static/js/787.1a6c8dee.chunk.js",
+    "index.html": "/Quest-BSML-Docs/index.html",
+    "main.57568da6.css.map": "/Quest-BSML-Docs/static/css/main.57568da6.css.map",
+    "main.6727bfc9.js.map": "/Quest-BSML-Docs/static/js/main.6727bfc9.js.map",
+    "787.1a6c8dee.chunk.js.map": "/Quest-BSML-Docs/static/js/787.1a6c8dee.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.57568da6.css",
-    "static/js/main.b8ccd82e.js"
+    "static/js/main.6727bfc9.js"
   ]
 }
