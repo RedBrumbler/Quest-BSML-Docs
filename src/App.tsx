@@ -16,7 +16,7 @@ import './styles/App.scss';
 
 export default function App() {
     return (
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router>
             <Routes>
                 <Route path='/' element={<Layout/>}>
                     <Route index element={<Home/>}/>
