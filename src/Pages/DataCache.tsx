@@ -24,7 +24,7 @@ export default function DataCache() {
 
                     <CodeBlock value={DataCacheExample}/>
 
-                    It is then important to know your MOD_ID. If you are using the conventional tooling this will probably be your mod name, without any spaces (e.g. your mod is named Qosmetics Whackers, then your MOD_ID will be QosmeticsWhackers). The BSML DataCache saves your data as {'MOD_ID "_" #identifier'}. The following src should then be used to access that image in BSML: {'QosmeticsWhackers_examlpeImage'}.<br/>
+                    It is then important to know your MOD_ID. If you are using the conventional tooling this will probably be your mod name, without any spaces (e.g. your mod is named Qosmetics Whackers, then your MOD_ID will be QosmeticsWhackers). The BSML DataCache saves your data as {'MOD_ID "_" #identifier'}. The following src should then be used to access that image in BSML: {'QosmeticsWhackers_exampleImage'}.<br/>
                     This will let BSML load the image from your mod's registered data. <br/>
                 </p>
                 <p>
@@ -33,7 +33,7 @@ export default function DataCache() {
 
                     BSML will now just load that image when you ask for it to be used.
 
-                    Keen observers will notice that there is no limitation on cross referencing other mods images. If you really want that then we can add it, but I think it's better not to have that as that lets us make icons packs or similiar things possibly.
+                    Keen observers will notice that there is no limitation on cross referencing other mods images. If it's really a thing that's requested we can look into limiting cross referencing mod images, but I think it's better not to have that as that lets us make icons packs or similiar things possibly.
 
                     Advanced users may make their own register macros, but I think it's best to stick with the one provided.
                 </p>
