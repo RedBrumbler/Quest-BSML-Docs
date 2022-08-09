@@ -20,6 +20,7 @@ export default function SideBar() {
                         <MenuItem>Home Page<Link to='/home'/></MenuItem>
                         <MenuItem>Getting Started<Link to='/getting-started'/></MenuItem>
                         <MenuItem>Data Cache<Link to='/data-cache'/></MenuItem>
+                        <MenuItem>Development<Link to='/development'/></MenuItem>
                     </SubMenu>
                     <SubMenu title="Tags">
                         <MenuItem>All Tags<Link to='/tags'/></MenuItem>
