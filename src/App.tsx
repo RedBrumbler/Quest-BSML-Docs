@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from './Layout'
 import Tag from './Pages/Tag'
 import TagList from './Pages/TagList'
@@ -16,7 +16,7 @@ import './styles/App.scss';
 
 export default function App() {
     return (
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <Router basename={process.env.PUBLIC_URL}>
             <Routes>
                 <Route path='/' element={<Layout/>}>
                     <Route index element={<Home/>}/>
@@ -34,6 +34,6 @@ export default function App() {
                     <Route path='*' element={<Unknown/>}/>
                 </Route>
             </Routes>
-        </BrowserRouter>
+        </Router>
     );
 }
