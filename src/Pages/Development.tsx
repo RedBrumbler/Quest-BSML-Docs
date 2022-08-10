@@ -3,7 +3,7 @@ import SubTitle from '../Components/SubTitle';
 import CodeBlock from '../Components/CodeBlock';
 
 const BSMLExample = 
-`<bg xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='https://redbrumbler.github.io/BSML-Docs/ https://raw.githubusercontent.com/RedBrumbler/Quest-BSML-Docs/gh-pages/schema.xsd'>
+`<bg xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='https://raw.githubusercontent.com/RedBrumbler/Quest-BSML-Docs/gh-pages/schema.xsd'>
     <!-- Your BSML Code here -->
 </bg>`;
 
