@@ -80,7 +80,7 @@ export const CustomList = {
         </custom-list>
     </vertical>
 </bg>`,
-    exampleImage: `DropdownListSetting.jpg`
+    exampleImage: `CustomList.jpg`
 }
 
 export const DropdownListSetting = {
