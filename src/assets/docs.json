@@ -15,7 +15,8 @@
                 "UnityEngine.UI.Selectable",
                 "TMPro.TextMeshProUGUI"
             ],
-            "description": "A copy of the shiny play button"
+            "description": "A copy of the shiny play button",
+            "since": ""
         },
         {
             "name": "background",
@@ -29,7 +30,8 @@
                 "UnityEngine.UI.ContentSizeFitter",
                 "UnityEngine.RectTransform"
             ],
-            "description": "A Generic container"
+            "description": "A Generic container",
+            "since": ""
         },
         {
             "name": "toggle-setting",
@@ -45,7 +47,8 @@
                 "UnityEngine.RectTransform",
                 "TMPro.TextMeshProUGUI"
             ],
-            "description": "Toggle a boolean on and off"
+            "description": "Toggle a boolean on and off",
+            "since": ""
         },
         {
             "name": "bsml",
@@ -53,7 +56,8 @@
                 "bsml"
             ],
             "components": [],
-            "description": "Generic, Transparent tag"
+            "description": "Generic, Transparent tag",
+            "since": ""
         },
         {
             "name": "button",
@@ -69,7 +73,8 @@
                 "UnityEngine.UI.Selectable",
                 "TMPro.TextMeshProUGUI"
             ],
-            "description": "Create a button"
+            "description": "Create a button",
+            "since": ""
         },
         {
             "name": "button-with-icon",
@@ -86,7 +91,8 @@
                 "UnityEngine.RectTransform",
                 "UnityEngine.UI.Selectable"
             ],
-            "description": "Create a button with an icon"
+            "description": "Create a button with an icon",
+            "since": ""
         },
         {
             "name": "clickable-image",
@@ -101,7 +107,8 @@
                 "UnityEngine.UI.LayoutElement",
                 "UnityEngine.RectTransform"
             ],
-            "description": "Create an image you can click"
+            "description": "Create an image you can click",
+            "since": ""
         },
         {
             "name": "clickable-text",
@@ -114,7 +121,8 @@
                 "UnityEngine.RectTransform",
                 "TMPro.TextMeshProUGUI"
             ],
-            "description": "Create some text you can click"
+            "description": "Create some text you can click",
+            "since": ""
         },
         {
             "name": "color-setting",
@@ -130,7 +138,8 @@
                 "UnityEngine.RectTransform",
                 "TMPro.TextMeshProUGUI"
             ],
-            "description": "Configure a color"
+            "description": "Configure a color",
+            "since": ""
         },
         {
             "name": "leaderboard",
@@ -142,7 +151,8 @@
                 "LeaderboardTableView",
                 "UnityEngine.RectTransform"
             ],
-            "description": "Make a leaderboard UI copy, useful for custom leaderboards"
+            "description": "Make a leaderboard UI copy, useful for custom leaderboards",
+            "since": ""
         },
         {
             "name": "custom-list",
@@ -154,7 +164,8 @@
                 "UnityEngine.UI.LayoutElement",
                 "UnityEngine.RectTransform"
             ],
-            "description": "Make a custom celled list"
+            "description": "Make a custom celled list",
+            "since": ""
         },
         {
             "name": "dropdown-list-setting",
@@ -168,7 +179,8 @@
                 "BSML.DropdownListSetting",
                 "TMPro.TextMeshProUGUI"
             ],
-            "description": "Let the user select from premade options"
+            "description": "Let the user select from premade options",
+            "since": ""
         },
         {
             "name": "grid",
@@ -183,7 +195,8 @@
                 "UnityEngine.UI.LayoutGroup",
                 "UnityEngine.RectTransform"
             ],
-            "description": "A grid layout, with cells along the horizontal and vertical axis"
+            "description": "A grid layout, with cells along the horizontal and vertical axis",
+            "since": ""
         },
         {
             "name": "horizontal",
@@ -198,7 +211,8 @@
                 "UnityEngine.UI.LayoutGroup",
                 "UnityEngine.RectTransform"
             ],
-            "description": "A horizontal layout, All it's children will be laid out horizontally"
+            "description": "A horizontal layout, All it's children will be laid out horizontally",
+            "since": ""
         },
         {
             "name": "icon-segments",
@@ -211,7 +225,8 @@
                 "UnityEngine.UI.LayoutGroup",
                 "UnityEngine.RectTransform"
             ],
-            "description": "A copy of the characteristic selector in the song selection UI, choose different options based on icons"
+            "description": "A copy of the characteristic selector in the song selection UI, choose different options based on icons",
+            "since": ""
         },
         {
             "name": "image",
@@ -225,7 +240,8 @@
                 "UnityEngine.UI.LayoutElement",
                 "UnityEngine.RectTransform"
             ],
-            "description": "Display an image"
+            "description": "Display an image",
+            "since": ""
         },
         {
             "name": "increment-setting",
@@ -239,7 +255,8 @@
                 "BSML.IncrementSetting",
                 "TMPro.TextMeshProUGUI"
             ],
-            "description": "Configure a numeric value with a min/max, using buttons"
+            "description": "Configure a numeric value with a min/max, using buttons",
+            "since": ""
         },
         {
             "name": "text",
@@ -251,7 +268,8 @@
                 "UnityEngine.RectTransform",
                 "TMPro.TextMeshProUGUI"
             ],
-            "description": "Display some text"
+            "description": "Display some text",
+            "since": ""
         },
         {
             "name": "list",
@@ -263,7 +281,8 @@
                 "UnityEngine.UI.LayoutElement",
                 "UnityEngine.RectTransform"
             ],
-            "description": "Create a list with cells based on base-game lists"
+            "description": "Create a list with cells based on base-game lists",
+            "since": ""
         },
         {
             "name": "list-setting",
@@ -277,7 +296,8 @@
                 "BSML.ListSetting",
                 "TMPro.TextMeshProUGUI"
             ],
-            "description": "Use buttons to choose between pre-set values"
+            "description": "Use buttons to choose between pre-set values",
+            "since": ""
         },
         {
             "name": "list-slider-setting",
@@ -291,7 +311,8 @@
                 "BSML.ListSliderSetting",
                 "TMPro.TextMeshProUGUI"
             ],
-            "description": "Use a slider to choose between pre-set values, buttons optional"
+            "description": "Use a slider to choose between pre-set values, buttons optional",
+            "since": ""
         },
         {
             "name": "loading",
@@ -305,7 +326,8 @@
                 "UnityEngine.UI.LayoutElement",
                 "UnityEngine.RectTransform"
             ],
-            "description": "A loading indicator"
+            "description": "A loading indicator",
+            "since": ""
         },
         {
             "name": "modal",
@@ -316,7 +338,8 @@
                 "BSML.ModalView",
                 "UnityEngine.RectTransform"
             ],
-            "description": "Make some UI that is used like a pop-up, meaning it's not visible by default and can be shown whenever you need or want to"
+            "description": "Make some UI that is used like a pop-up, meaning it's not visible by default and can be shown whenever you need or want to",
+            "since": ""
         },
         {
             "name": "modal-color-picker",
@@ -328,7 +351,8 @@
                 "BSML.ModalView",
                 "UnityEngine.RectTransform"
             ],
-            "description": "Pick a color using a modal pop-up"
+            "description": "Pick a color using a modal pop-up",
+            "since": ""
         },
         {
             "name": "modal-keyboard",
@@ -340,7 +364,8 @@
                 "BSML.ModalView",
                 "UnityEngine.RectTransform"
             ],
-            "description": "Enter a string using a keyboard pop-up"
+            "description": "Enter a string using a keyboard pop-up",
+            "since": ""
         },
         {
             "name": "modifier",
@@ -357,7 +382,8 @@
                 "UnityEngine.UI.Selectable",
                 "TMPro.TextMeshProUGUI"
             ],
-            "description": "A copy of the modifier toggles in the gameplay menu on the left"
+            "description": "A copy of the modifier toggles in the gameplay menu on the left",
+            "since": ""
         },
         {
             "name": "modifier-container",
@@ -372,7 +398,8 @@
                 "UnityEngine.UI.LayoutGroup",
                 "UnityEngine.RectTransform"
             ],
-            "description": "A container made to fit the gameplay menu on the left"
+            "description": "A container made to fit the gameplay menu on the left",
+            "since": ""
         },
         {
             "name": "text-page",
@@ -384,7 +411,8 @@
                 "UnityEngine.RectTransform",
                 "TMPro.TextMeshProUGUI"
             ],
-            "description": "A scrollable container perfect for large quantities of text"
+            "description": "A scrollable container perfect for large quantities of text",
+            "since": ""
         },
         {
             "name": "page-button",
@@ -401,7 +429,8 @@
                 "UnityEngine.RectTransform",
                 "UnityEngine.UI.Selectable"
             ],
-            "description": "A button perfect for scrolling up/down scrollviews or lists, since it's an arrow"
+            "description": "A button perfect for scrolling up/down scrollviews or lists, since it's an arrow",
+            "since": ""
         },
         {
             "name": "raw-image",
@@ -414,7 +443,8 @@
                 "UnityEngine.UI.RawImage",
                 "UnityEngine.RectTransform"
             ],
-            "description": "Display a raw texture"
+            "description": "Display a raw texture",
+            "since": ""
         },
         {
             "name": "scroll-indicator",
@@ -428,7 +458,8 @@
                 "UnityEngine.RectTransform",
                 "BSML.ScrollIndicator"
             ],
-            "description": "Indicate scrolling progress"
+            "description": "Indicate scrolling progress",
+            "since": ""
         },
         {
             "name": "scroll-view",
@@ -441,7 +472,8 @@
                 "UnityEngine.UI.LayoutGroup",
                 "UnityEngine.RectTransform"
             ],
-            "description": "A container that can scroll through the content you define"
+            "description": "A container that can scroll through the content you define",
+            "since": ""
         },
         {
             "name": "scrollable-container",
@@ -456,7 +488,8 @@
                 "UnityEngine.RectTransform",
                 "BSML.ScrollableContainer"
             ],
-            "description": "A container that can scroll through the content you define, but doesn't come with a scroll indicator by default"
+            "description": "A container that can scroll through the content you define, but doesn't come with a scroll indicator by default",
+            "since": ""
         },
         {
             "name": "settings-scroll-view",
@@ -471,7 +504,8 @@
                 "UnityEngine.UI.LayoutGroup",
                 "UnityEngine.RectTransform"
             ],
-            "description": "An expanded scroll view, but resized in the vertical direction"
+            "description": "An expanded scroll view, but resized in the vertical direction",
+            "since": ""
         },
         {
             "name": "settings-submenu",
@@ -479,7 +513,8 @@
                 "settings-submenu"
             ],
             "components": [],
-            "description": "A container that's used on PC for settings related things, but not supported on the quest version of BSML, will yield an empty gameObject!"
+            "description": "A container that's used on PC for settings related things, but not supported on the quest version of BSML, will yield an empty gameObject!",
+            "since": ""
         },
         {
             "name": "slider-setting",
@@ -493,7 +528,8 @@
                 "BSML.SliderSetting",
                 "TMPro.TextMeshProUGUI"
             ],
-            "description": "Configure a numeric value with a slider, buttons optional"
+            "description": "Configure a numeric value with a slider, buttons optional",
+            "since": ""
         },
         {
             "name": "stack",
@@ -507,7 +543,8 @@
                 "UnityEngine.UI.LayoutGroup",
                 "UnityEngine.RectTransform"
             ],
-            "description": "A stack layout, used to stack things on top of eachother in the Z direction"
+            "description": "A stack layout, used to stack things on top of eachother in the Z direction",
+            "since": ""
         },
         {
             "name": "string-setting",
@@ -522,7 +559,8 @@
                 "UnityEngine.RectTransform",
                 "TMPro.TextMeshProUGUI"
             ],
-            "description": "Configure a string value, comes with it's own keyboard!"
+            "description": "Configure a string value, comes with it's own keyboard!",
+            "since": ""
         },
         {
             "name": "tab",
@@ -535,7 +573,8 @@
                 "UnityEngine.RectTransform",
                 "BSML.Tab"
             ],
-            "description": "Used with the tab selector, tag it right and you can switch between seperate tabs in your UI"
+            "description": "Used with the tab selector, tag it right and you can switch between seperate tabs in your UI",
+            "since": ""
         },
         {
             "name": "tab-select",
@@ -550,7 +589,8 @@
                 "BSML.TabSelector",
                 "HMUI.TextSegmentedControl"
             ],
-            "description": "Used with tabs, tag it right and you can switch between seperate tabs in your UI"
+            "description": "Used with tabs, tag it right and you can switch between seperate tabs in your UI",
+            "since": ""
         },
         {
             "name": "text-segments",
@@ -563,7 +603,8 @@
                 "UnityEngine.RectTransform",
                 "HMUI.TextSegmentedControl"
             ],
-            "description": "A copy of the difficulty selector in the song selection menu, switch between values using text"
+            "description": "A copy of the difficulty selector in the song selection menu, switch between values using text",
+            "since": ""
         },
         {
             "name": "vertical",
@@ -578,7 +619,8 @@
                 "UnityEngine.UI.LayoutGroup",
                 "UnityEngine.RectTransform"
             ],
-            "description": "A vertical layout, all it's children will be laid out vertically"
+            "description": "A vertical layout, all it's children will be laid out vertically",
+            "since": ""
         },
         {
             "name": "vertical-icon-segments",
@@ -593,7 +635,21 @@
                 "UnityEngine.UI.LayoutGroup",
                 "UnityEngine.RectTransform"
             ],
-            "description": "A copy of the leaderboard locality selector, choose an option with icons, but vertically"
+            "description": "A copy of the leaderboard locality selector, choose an option with icons, but vertically",
+            "since": ""
+        },
+        {
+            "name": "gradient-text",
+            "aliases": [
+                "gradient-text"
+            ],
+            "components": [
+                "BSML.TextGradientUpdater",
+                "UnityEngine.RectTransform",
+                "TMPro.TextMeshProUGUI"
+            ],
+            "description": "Display some text using a gradient as the color, optionally scrolling the gradient",
+            "since": "0.2.8"
         }
     ],
     "macros": [
@@ -2141,6 +2197,56 @@
                 }
             ],
             "description": "A Beat Saber UI Component to handle selecting different pieces of text (Difficulty select)"
+        },
+        {
+            "typename": "BSML.TextGradientUpdater",
+            "properties": [
+                {
+                    "key": "gradientScrollSpeed",
+                    "aliases": [
+                        "gradient-speed",
+                        "gradient-scroll-speed"
+                    ],
+                    "description": "The scroll speed of the gradient across the text",
+                    "type": "float"
+                },
+                {
+                    "key": "gradientScrollRepeat",
+                    "aliases": [
+                        "gradient-repeat",
+                        "gradient-scroll-repeat"
+                    ],
+                    "description": "How many times the gradient repeats across the text",
+                    "type": "float"
+                },
+                {
+                    "key": "gradientColors",
+                    "aliases": [
+                        "gradient-colors",
+                        "gradient"
+                    ],
+                    "description": "The colors the gradient should be",
+                    "type": "List of HTML Color String"
+                },
+                {
+                    "key": "gradientFixedStep",
+                    "aliases": [
+                        "gradient-fixed-step"
+                    ],
+                    "description": "Whether the gradient should use fixed steps instead of going once around the text",
+                    "type": "bool"
+                },
+                {
+                    "key": "gradientStepSize",
+                    "aliases": [
+                        "gradient-step-size",
+                        "gradient-fixed-step-size"
+                    ],
+                    "description": "How big each step should be",
+                    "type": "float"
+                }
+            ],
+            "description": "A component that updates the text colors each LateUpdate call"
         }
     ],
     "arguments": [
@@ -2182,6 +2288,15 @@
                 "#ffffff",
                 "red",
                 "rgb(255, 255, 255)"
+            ]
+        },
+        {
+            "name": "List of HTML Color String",
+            "description": "A list of color strings as used in HTML, colors seperated by semicolons (;)",
+            "possibleValues": [
+                "rgb(0, 200, 0);rgb(0, 50, 0)",
+                "red;yellow;green;cyan;blue;magenta;red",
+                "#5bcefa;#f5a9b8;#ffffff;#f5a9b8;#5bcefa"
             ]
         },
         {

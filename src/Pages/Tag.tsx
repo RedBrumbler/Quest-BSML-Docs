@@ -30,7 +30,7 @@ export default function Tag() {
     return (
         <div className='main-body'>
             <div className='main-content'>
-                <Title title={tag} description={docTag.description}/>
+                <Title title={tag} description={docTag.description} since={docTag.since}/>
                 {docTag.aliases.length > 1 ? <Aliases aliases={docTag.aliases.filter(t => t !== tag)} prefix='Aliases:'/> : <></>}
                 <div className='components'>
                     {

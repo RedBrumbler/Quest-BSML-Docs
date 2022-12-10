@@ -11,6 +11,7 @@ const TagExamples: { [key: string]: { exampleString: string, exampleImage?: stri
     "custom-list": Examples.CustomList,
     "dropdown-list-setting": Examples.DropdownListSetting,
     "grid": Examples.Grid,
+    "gradient-text": Examples.GradientText,
     "horizontal": Examples.Horizontal,
     "icon-segments": Examples.IconSegments,
     "image": Examples.Image,

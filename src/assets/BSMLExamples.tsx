@@ -108,6 +108,26 @@ export const Grid = {
     exampleImage: `Grid.jpg`
 }
 
+export const GradientText = {
+    exampleString: 
+`<vertical pref-width='60' pref-height='30' bg='round-rect-panel' 
+    vertical-fit='PreferredSize' pad='2'>
+    <gradient-text 
+        text="Be Gay Do Crime" 
+        gradient='red;yellow;green;cyan;blue;magenta;red' 
+        gradient-repeat='2' 
+        align='Center' 
+        font-size='8'/>
+    <gradient-text 
+        text="Trans Rights" 
+        gradient='#5bcefa;#f5a9b8;#ffffff;#f5a9b8;#5bcefa' 
+        gradient-repeat='1' 
+        align='Center' 
+        font-size='8'/>
+</vertical>`,
+    exampleImage: `GradientText.jpg`
+}
+
 export const Horizontal = {
     exampleString: 
 `<horizontal pref-width='60' pref-height='30' bg='round-rect-panel'>

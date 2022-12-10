@@ -13,6 +13,7 @@ $icon-size: 35px;
 $bg-color: #070626;
 $transition-color: #04031c;
 $spacer-color: rgba(255, 255, 255, 0.20);
+$since-color: rgba(255, 255, 255, 0.20);
 $alias-color: rgb(40, 113, 231);
 $link-and-text-color: #b3b8d4;
 $link-hover-color: #dee2ec;
@@ -105,6 +106,15 @@ body {
       .spacer {
         background-color: $spacer-color;
         height: .1rem;
+      }
+
+      .since {
+        display: inline-block;
+        padding: 0.2rem .5rem 0.2rem .5rem;
+        margin: .1rem;
+        font-size: .8rem;
+        border-radius: .5rem;
+        background-color: $since-color;
       }
 
       .link {
