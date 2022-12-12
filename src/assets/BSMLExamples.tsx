@@ -182,7 +182,7 @@ export const List = {
 `<bg size-delta-x="65" size-delta-y="65" anchor-pos-x="0" anchor-pos-y="10">
     <vertical bg='round-rect-panel' horizontal-fit='PreferredSize' vertical-fit='PreferredSize' 
         anchor-pos-x='-3' size-delta-y='0' pad='2'>
-        <list content='listData' on-select='ItemSelected' show-scrollbar='true'/>
+        <list content='listData' select-cell='ItemSelected' show-scrollbar='true'/>
     </vertical>
 </bg>`,
     exampleImage: `List.jpg`
