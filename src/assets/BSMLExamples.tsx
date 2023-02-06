@@ -432,8 +432,7 @@ export const TextField = {
 `<vertical pref-width='60' pref-height='30' bg='round-rect-panel' 
     vertical-fit='PreferredSize' pad='2'>
     <text-field label="User name" on-change='SetUserName'/>
-</vertical>`,
-    exampleImage: ``
+</vertical>`
 }
 
 export const Tab = {
