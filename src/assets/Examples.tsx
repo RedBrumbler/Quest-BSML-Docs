@@ -38,6 +38,7 @@ const TagExamples: { [key: string]: { exampleString: string, exampleImage?: stri
     "tab": Examples.Tab,
     "tab-select": Examples.TabSelect,
     "text": Examples.Text,
+    "text-field": Examples.TextField,
     "text-page": Examples.TextPage,
     "text-segments": Examples.TextSegments,
     "toggle-setting": Examples.ToggleSetting,

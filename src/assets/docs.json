@@ -266,6 +266,7 @@
             ],
             "components": [
                 "UnityEngine.RectTransform",
+                "UnityEngine.UI.LayoutElement",
                 "TMPro.TextMeshProUGUI"
             ],
             "description": "Display some text",
@@ -545,6 +546,20 @@
             ],
             "description": "A stack layout, used to stack things on top of eachother in the Z direction",
             "since": ""
+        },
+        {
+            "name": "text-field",
+            "aliases": [
+                "text-field"
+            ],
+            "components": [
+                "UnityEngine.UI.LayoutElement",
+                "UnityEngine.RectTransform",
+                "HMUI.InputFieldView",
+                "TMPro.TextMeshProUGUI"
+            ],
+            "description": "Configure a string value, comes with the base game keyboard!",
+            "since": "0.3.0"
         },
         {
             "name": "string-setting",
@@ -866,7 +881,8 @@
                 {
                     "key": "backgroundAlpha",
                     "aliases": [
-                        "bg-alpha"
+                        "bg-alpha",
+                        "background-alpha"
                     ],
                     "description": "Value for how transparent the background is",
                     "type": "float"
@@ -878,6 +894,24 @@
                         "background-color"
                     ],
                     "description": "Color value of the background",
+                    "type": "HTML Color String"
+                },
+                {
+                    "key": "backgroundColor0",
+                    "aliases": [
+                        "bg-color0",
+                        "background-color0"
+                    ],
+                    "description": "Color0 value for the background gradient",
+                    "type": "HTML Color String"
+                },
+                {
+                    "key": "backgroundColor1",
+                    "aliases": [
+                        "bg-color1",
+                        "background-color1"
+                    ],
+                    "description": "Color1 value for the background gradient",
                     "type": "HTML Color String"
                 }
             ],
@@ -1325,6 +1359,28 @@
                 }
             ],
             "description": "A component from unity to abstract a Horizontal or Vertical layout"
+        },
+        {
+            "typename": "HMUI.InputFieldView",
+            "properties": [
+                {
+                    "key": "onChange",
+                    "aliases": [
+                        "on-change"
+                    ],
+                    "description": "BSMLAction id to run when the text changes",
+                    "type": "BSMLAction ID (void(StringW))"
+                },
+                {
+                    "key": "textLengthLimit",
+                    "aliases": [
+                        "text-length-limit"
+                    ],
+                    "description": "Max length of the string",
+                    "type": "int"
+                }
+            ],
+            "description": "A Beat Saber UI Component used to input text"
         },
         {
             "typename": "HMUI.IconSegmentedControl",
