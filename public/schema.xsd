@@ -250,9 +250,29 @@
                 <xs:documentation>Sets the color of this background</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="background-color0" type="color-string">
+            <xs:annotation>
+                <xs:documentation>Sets the color0 of this background</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="background-color1" type="color-string">
+            <xs:annotation>
+                <xs:documentation>Sets the color1 of this background</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="bg-color" type="color-string">
             <xs:annotation>
                 <xs:documentation>Sets the color of this background</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="bg-color0" type="color-string">
+            <xs:annotation>
+                <xs:documentation>Sets the color0 of this background</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="bg-color1" type="color-string">
+            <xs:annotation>
+                <xs:documentation>Sets the color1 of this background</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="bg-alpha" type="xs:string">
@@ -1287,9 +1307,29 @@
                 <xs:documentation>Sets the color of this background</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="background-color0" type="color-string">
+            <xs:annotation>
+                <xs:documentation>Sets the color0 of this background</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="background-color1" type="color-string">
+            <xs:annotation>
+                <xs:documentation>Sets the color1 of this background</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="bg-color" type="color-string">
             <xs:annotation>
                 <xs:documentation>Sets the color of this background</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="bg-color0" type="color-string">
+            <xs:annotation>
+                <xs:documentation>Sets the color0 of this background</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="bg-color1" type="color-string">
+            <xs:annotation>
+                <xs:documentation>Sets the color1 of this background</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="bg-alpha" type="xs:string">
@@ -1445,9 +1485,29 @@
                 <xs:documentation>Sets the color of this background</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="background-color0" type="color-string">
+            <xs:annotation>
+                <xs:documentation>Sets the color0 of this background</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="background-color1" type="color-string">
+            <xs:annotation>
+                <xs:documentation>Sets the color1 of this background</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="bg-color" type="color-string">
             <xs:annotation>
                 <xs:documentation>Sets the color of this background</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="bg-color0" type="color-string">
+            <xs:annotation>
+                <xs:documentation>Sets the color0 of this background</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="bg-color1" type="color-string">
+            <xs:annotation>
+                <xs:documentation>Sets the color1 of this background</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="bg-alpha" type="xs:string">
@@ -4181,9 +4241,29 @@
                 <xs:documentation>Sets the color of this background</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="background-color0" type="color-string">
+            <xs:annotation>
+                <xs:documentation>Sets the color0 of this background</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="background-color1" type="color-string">
+            <xs:annotation>
+                <xs:documentation>Sets the color1 of this background</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="bg-color" type="color-string">
             <xs:annotation>
                 <xs:documentation>Sets the color of this background</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="bg-color0" type="color-string">
+            <xs:annotation>
+                <xs:documentation>Sets the color0 of this background</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="bg-color1" type="color-string">
+            <xs:annotation>
+                <xs:documentation>Sets the color1 of this background</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="bg-alpha" type="xs:string">
@@ -4897,6 +4977,204 @@
         <xs:attribute name="tags" type="xs:string" />
         <xs:attribute name="id" type="xs:string" />
     </xs:complexType>
+    <xs:element name="gradient-text" type="GradientTextTag" />
+    <xs:complexType name="GradientTextTag">
+        <xs:sequence>
+            <xs:any minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+        <xs:attribute name="gradient-speed" type="xs:float">
+            <xs:annotation>
+                <xs:documentation>The scroll speed of the gradient across the text.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="gradient-scroll-speed" type="xs:float">
+            <xs:annotation>
+                <xs:documentation>The scroll speed of the gradient across the text.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="gradient-repeat" type="xs:float">
+            <xs:annotation>
+                <xs:documentation>How many times the gradient repeats across the text.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="gradient-scroll-repeat" type="xs:float">
+            <xs:annotation>
+                <xs:documentation>How many times the gradient repeats across the text.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="gradient-colors" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The colors the gradient should be.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="gradient" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The colors the gradient should be.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="gradient-fixed-step" type="bool">
+            <xs:annotation>
+                <xs:documentation>Whether the gradient should use fixed steps instead of going once around the text.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="gradient-step-size" type="xs:float">
+            <xs:annotation>
+                <xs:documentation>How big each step should be.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="gradient-fixed-step-size" type="xs:float">
+            <xs:annotation>
+                <xs:documentation>How big each step should be.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-min-x" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized x position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-min-y" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max-x" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized x position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max-y" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-pos-x" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The x position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-pos-y" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="size-delta-x" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The width of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="size-delta-y" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot-x" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized x position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot-y" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="hover-hint" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Text that will appear when a pointer hovers over</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="active" type="bool">
+            <xs:annotation>
+                <xs:documentation>Whether or not the GameObject this RectTransform belongs to is active</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="text" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Text to display</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="font-size" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Size of font</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="font-color" type="color-string">
+            <xs:annotation>
+                <xs:documentation>Color of font</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="color" type="color-string">
+            <xs:annotation>
+                <xs:documentation>Color of font</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="face-color" type="color-string">
+            <xs:annotation>
+                <xs:documentation>Face color of font</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="outline-color" type="color-string">
+            <xs:annotation>
+                <xs:documentation>Outline color of font</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="outline-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Width of font outline</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="rich-text" type="bool">
+            <xs:annotation>
+                <xs:documentation>Whether or not to enable [rich text](http://digitalnativestudios.com/textmeshpro/docs/rich-text/)</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="font-align" type="TextAlignmentOptions">
+            <xs:annotation>
+                <xs:documentation>How to align the text</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="align" type="TextAlignmentOptions">
+            <xs:annotation>
+                <xs:documentation>How to align the text</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="overflow-mode" type="TextOverflowModes">
+            <xs:annotation>
+                <xs:documentation>How to handle text overflow</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="word-wrapping" type="bool">
+            <xs:annotation>
+                <xs:documentation>Whether or not to wrap text</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="bold" type="bool">
+            <xs:annotation>
+                <xs:documentation>Whether or not text is bold</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="italics" type="bool">
+            <xs:annotation>
+                <xs:documentation>Whether or not to italicize text</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="underlined" type="bool">
+            <xs:annotation>
+                <xs:documentation>Whether or not to underline text</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="strikethrough" type="bool">
+            <xs:annotation>
+                <xs:documentation>Whether or not to strikethrough text</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="all-uppercase" type="bool">
+            <xs:annotation>
+                <xs:documentation>Whether or not to make the text all uppercase</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="tags" type="xs:string" />
+        <xs:attribute name="id" type="xs:string" />
+    </xs:complexType>
     <xs:element name="text" type="TextTag" />
     <xs:element name="label" type="TextTag" />
     <xs:complexType name="TextTag">
@@ -5249,9 +5527,29 @@
                 <xs:documentation>Sets the color of this background</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="background-color0" type="color-string">
+            <xs:annotation>
+                <xs:documentation>Sets the color0 of this background</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="background-color1" type="color-string">
+            <xs:annotation>
+                <xs:documentation>Sets the color1 of this background</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="bg-color" type="color-string">
             <xs:annotation>
                 <xs:documentation>Sets the color of this background</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="bg-color0" type="color-string">
+            <xs:annotation>
+                <xs:documentation>Sets the color0 of this background</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="bg-color1" type="color-string">
+            <xs:annotation>
+                <xs:documentation>Sets the color1 of this background</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="bg-alpha" type="xs:string">
@@ -6800,6 +7098,209 @@
         <xs:attribute name="show-buttons" type="bool">
             <xs:annotation>
                 <xs:documentation>Whether or not to show increment/decrement buttons on either side of the slider</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="tags" type="xs:string" />
+        <xs:attribute name="id" type="xs:string" />
+    </xs:complexType>
+    <xs:element name="text-field" type="TextFieldTag" />
+    <xs:complexType name="TextFieldTag">
+        <xs:sequence>
+            <xs:any minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+        <xs:attribute name="interactable" type="bool">
+            <xs:annotation>
+                <xs:documentation>Whether or not this setting is interactable</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="ignore-layout" type="bool">
+            <xs:annotation>
+                <xs:documentation>Whether or not to use layout element.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="preferred-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The preferred width this layout element should have before additional available width is allocated.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pref-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The preferred width this layout element should have before additional available width is allocated.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="preferred-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The preferred height this layout element should have before additional available height is allocated.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pref-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The preferred height this layout element should have before additional available height is allocated.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="min-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The minimum height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="min-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The minimum width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-min-x" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized x position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-min-y" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max-x" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized x position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max-y" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-pos-x" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The x position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-pos-y" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="size-delta-x" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The width of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="size-delta-y" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot-x" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized x position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot-y" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="hover-hint" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Text that will appear when a pointer hovers over</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="active" type="bool">
+            <xs:annotation>
+                <xs:documentation>Whether or not the GameObject this RectTransform belongs to is active</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="text" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Text to display</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="font-size" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Size of font</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="font-color" type="color-string">
+            <xs:annotation>
+                <xs:documentation>Color of font</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="color" type="color-string">
+            <xs:annotation>
+                <xs:documentation>Color of font</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="face-color" type="color-string">
+            <xs:annotation>
+                <xs:documentation>Face color of font</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="outline-color" type="color-string">
+            <xs:annotation>
+                <xs:documentation>Outline color of font</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="outline-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Width of font outline</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="rich-text" type="bool">
+            <xs:annotation>
+                <xs:documentation>Whether or not to enable [rich text](http://digitalnativestudios.com/textmeshpro/docs/rich-text/)</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="font-align" type="TextAlignmentOptions">
+            <xs:annotation>
+                <xs:documentation>How to align the text</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="align" type="TextAlignmentOptions">
+            <xs:annotation>
+                <xs:documentation>How to align the text</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="overflow-mode" type="TextOverflowModes">
+            <xs:annotation>
+                <xs:documentation>How to handle text overflow</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="word-wrapping" type="bool">
+            <xs:annotation>
+                <xs:documentation>Whether or not to wrap text</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="bold" type="bool">
+            <xs:annotation>
+                <xs:documentation>Whether or not text is bold</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="italics" type="bool">
+            <xs:annotation>
+                <xs:documentation>Whether or not to italicize text</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="underlined" type="bool">
+            <xs:annotation>
+                <xs:documentation>Whether or not to underline text</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="strikethrough" type="bool">
+            <xs:annotation>
+                <xs:documentation>Whether or not to strikethrough text</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="all-uppercase" type="bool">
+            <xs:annotation>
+                <xs:documentation>Whether or not to make the text all uppercase</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="on-change" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>BSMLAction ID to call when value changes</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="text-length-limit" type="xs:int">
+            <xs:annotation>
+                <xs:documentation>Max length of the string</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="tags" type="xs:string" />
