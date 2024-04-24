@@ -103,6 +103,7 @@
             "components": [
                 "BSML.ClickableImage",
                 "UnityEngine.UI.Image",
+                "UnityEngine.UI.Graphic",
                 "HMUI.ImageView",
                 "UnityEngine.UI.LayoutElement",
                 "UnityEngine.RectTransform"
@@ -132,6 +133,7 @@
             "components": [
                 "BSML.BaseSetting",
                 "UnityEngine.UI.Image",
+                "UnityEngine.UI.Graphic",
                 "HMUI.ImageView",
                 "UnityEngine.UI.LayoutElement",
                 "BSML.ModalColorPicker",
@@ -236,6 +238,7 @@
             ],
             "components": [
                 "UnityEngine.UI.Image",
+                "UnityEngine.UI.Graphic",
                 "HMUI.ImageView",
                 "UnityEngine.UI.LayoutElement",
                 "UnityEngine.RectTransform"
@@ -323,6 +326,7 @@
             ],
             "components": [
                 "UnityEngine.UI.Image",
+                "UnityEngine.UI.Graphic",
                 "HMUI.ImageView",
                 "UnityEngine.UI.LayoutElement",
                 "UnityEngine.RectTransform"
@@ -377,6 +381,7 @@
             "components": [
                 "BSML.BaseSetting",
                 "UnityEngine.UI.Image",
+                "UnityEngine.UI.Graphic",
                 "HMUI.ImageView",
                 "UnityEngine.UI.LayoutElement",
                 "UnityEngine.RectTransform",
@@ -455,6 +460,7 @@
             ],
             "components": [
                 "UnityEngine.UI.Image",
+                "UnityEngine.UI.Graphic",
                 "HMUI.ImageView",
                 "UnityEngine.RectTransform",
                 "BSML.ScrollIndicator"
@@ -646,6 +652,7 @@
                 "UnityEngine.UI.HorizontalOrVerticalLayoutGroup",
                 "HMUI.IconSegmentedControl",
                 "UnityEngine.UI.Image",
+                "UnityEngine.UI.Graphic",
                 "HMUI.ImageView",
                 "UnityEngine.UI.LayoutGroup",
                 "UnityEngine.RectTransform"
@@ -1439,6 +1446,28 @@
             "description": "A unity Component to display a Sprite in UI"
         },
         {
+            "typename": "UnityEngine.UI.Graphic",
+            "properties": [
+                {
+                    "key": "raycastPadding",
+                    "aliases": [
+                        "raycast-padding"
+                    ],
+                    "description": "Padding for the raycast target",
+                    "type": "Vector4"
+                },
+                {
+                    "key": "raycastTarget",
+                    "aliases": [
+                        "raycast-target"
+                    ],
+                    "description": "Whether this graphic should be a raycast target",
+                    "type": "bool"
+                }
+            ],
+            "description": "A unity Component to display a Sprite in UI"
+        },
+        {
             "typename": "HMUI.ImageView",
             "properties": [
                 {
@@ -1495,6 +1524,24 @@
                         "pref-width"
                     ],
                     "description": "The preferred width this element should be if there is enough space",
+                    "type": "float"
+                },
+                {
+                    "key": "flexibleHeight",
+                    "aliases": [
+                        "flexible-height",
+                        "flex-height"
+                    ],
+                    "description": "the flexible height this element should be if there is enough space",
+                    "type": "float"
+                },
+                {
+                    "key": "flexibleWidth",
+                    "aliases": [
+                        "flexible-width",
+                        "flex-width"
+                    ],
+                    "description": "The flexible width this element should be if there is enough space",
                     "type": "float"
                 }
             ],
@@ -1741,6 +1788,14 @@
                     "type": "float"
                 },
                 {
+                    "key": "anchorMax",
+                    "aliases": [
+                        "anchor-max"
+                    ],
+                    "description": "The normalized position in the parent RectTransform that the upper right corner is anchored to",
+                    "type": "Vector2"
+                },
+                {
                     "key": "anchorMinX",
                     "aliases": [
                         "anchor-min-x"
@@ -1757,6 +1812,14 @@
                     "type": "float"
                 },
                 {
+                    "key": "anchorMin",
+                    "aliases": [
+                        "anchor-min"
+                    ],
+                    "description": "The normalized position in the parent RectTransform that the lower left corner is anchored to",
+                    "type": "Vector2"
+                },
+                {
                     "key": "anchorPosX",
                     "aliases": [
                         "anchor-pos-x"
@@ -1771,6 +1834,14 @@
                     ],
                     "description": "The position of the pivot of this RectTransform relative to the anchor reference point",
                     "type": "float"
+                },
+                {
+                    "key": "anchoredPosition",
+                    "aliases": [
+                        "anchored-position"
+                    ],
+                    "description": "The position of the pivot of this RectTransform relative to the anchor reference point",
+                    "type": "Vector2"
                 },
                 {
                     "key": "hoverHint",
@@ -1805,6 +1876,14 @@
                     "type": "float"
                 },
                 {
+                    "key": "pivot",
+                    "aliases": [
+                        "pivot"
+                    ],
+                    "description": "The normalized position in this RectTransform that it rotates around",
+                    "type": "Vector2"
+                },
+                {
                     "key": "sizeDeltaX",
                     "aliases": [
                         "size-delta-x"
@@ -1819,6 +1898,22 @@
                     ],
                     "description": "The size of this RectTransform relative to the distances between the anchors",
                     "type": "float"
+                },
+                {
+                    "key": "sizeDelta",
+                    "aliases": [
+                        "size-delta"
+                    ],
+                    "description": "The size of this RectTransform relative to the distances between the anchors",
+                    "type": "Vector2"
+                },
+                {
+                    "key": "localScale",
+                    "aliases": [
+                        "local-scale", "scale"
+                    ],
+                    "description": "The localScale of this RectTransform",
+                    "type": "Vector3"
                 }
             ],
             "description": "Transform information for UI objects from Unity"
@@ -2335,6 +2430,27 @@
             "description": "Integer value",
             "possibleValues": [
                 "0", "2", "420", "-69"
+            ]
+        },
+        {
+            "name": "Vector2",
+            "description": "Vector2 value, if only 1 number given, sets both x and y to the same value",
+            "possibleValues": [
+                "0", "420 69.0", "0 0", "-69"
+            ]
+        },
+        {
+            "name": "Vector3",
+            "description": "Vector3 value, if only 1 number given, sets x, y and z to the same value, if 2 numbers given sets a sensible default for z",
+            "possibleValues": [
+                "0", "420 69.0 -42", "0 0", "-69"
+            ]
+        },
+        {
+            "name": "Vector4",
+            "description": "Vector4 value, if only 1 number given, sets x, y, z and w to the same value, if 2 numbers given sets z and w to x and y, if 3 numbers given sets a sensible default for w",
+            "possibleValues": [
+                "0", "420 69.0 -42", "0 0 0 1", "-69"
             ]
         },
         {
