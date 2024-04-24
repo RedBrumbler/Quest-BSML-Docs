@@ -305,6 +305,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
@@ -313,6 +318,11 @@
         <xs:attribute name="anchor-max-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
@@ -325,6 +335,11 @@
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The width of this RectTransform relative to the distances between the anchors.</xs:documentation>
@@ -335,6 +350,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -343,6 +363,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -406,6 +431,26 @@
                 <xs:documentation>The minimum width this layout element should have.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="flex-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flex-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-min-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
@@ -414,6 +459,11 @@
         <xs:attribute name="anchor-min-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
@@ -426,6 +476,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The x position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
@@ -434,6 +489,11 @@
         <xs:attribute name="anchor-pos-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
@@ -446,6 +506,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -454,6 +519,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -639,6 +709,26 @@
                 <xs:documentation>The minimum width this layout element should have.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="flex-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flex-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pad-top" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Top padding</xs:documentation>
@@ -679,6 +769,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
@@ -687,6 +782,11 @@
         <xs:attribute name="anchor-max-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
@@ -699,6 +799,11 @@
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The width of this RectTransform relative to the distances between the anchors.</xs:documentation>
@@ -709,6 +814,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -717,6 +827,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -898,6 +1013,26 @@
                 <xs:documentation>The minimum width this layout element should have.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="flex-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flex-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-min-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
@@ -906,6 +1041,11 @@
         <xs:attribute name="anchor-min-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
@@ -918,6 +1058,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The x position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
@@ -926,6 +1071,11 @@
         <xs:attribute name="anchor-pos-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
@@ -938,6 +1088,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -948,6 +1103,11 @@
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Text that will appear when a pointer hovers over</xs:documentation>
@@ -956,6 +1116,16 @@
         <xs:attribute name="active" type="bool">
             <xs:annotation>
                 <xs:documentation>Whether or not the GameObject this RectTransform belongs to is active</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="raycast-target" type="bool">
+            <xs:annotation>
+                <xs:documentation>Whether this element functions as a raycast target</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="raycast-padding" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Vec4 padding</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="tags" type="xs:string" />
@@ -991,6 +1161,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
@@ -999,6 +1174,11 @@
         <xs:attribute name="anchor-max-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
@@ -1011,6 +1191,11 @@
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The width of this RectTransform relative to the distances between the anchors.</xs:documentation>
@@ -1021,6 +1206,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -1029,6 +1219,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -1179,11 +1374,6 @@
                 <xs:documentation>The contents of the list</xs:documentation>
             </xs:annotation>
         </xs:attribute>
-        <xs:attribute name="data" type="xs:string">
-            <xs:annotation>
-                <xs:documentation>The contents of the list</xs:documentation>
-            </xs:annotation>
-        </xs:attribute>
         <xs:attribute name="clickable-cells" type="bool">
             <xs:annotation>
                 <xs:documentation>Whether or not cells can be clicked or not</xs:documentation>
@@ -1234,6 +1424,26 @@
                 <xs:documentation>The minimum width this layout element should have.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="flex-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flex-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-min-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
@@ -1242,6 +1452,11 @@
         <xs:attribute name="anchor-min-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
@@ -1254,6 +1469,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The x position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
@@ -1262,6 +1482,11 @@
         <xs:attribute name="anchor-pos-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
@@ -1274,6 +1499,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -1282,6 +1512,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -1372,6 +1607,11 @@
                 <xs:documentation>Height of each cell in the grid</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="cell-size" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Size of each cell in the grid</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="spacing-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Horizontal space between cells</xs:documentation>
@@ -1380,6 +1620,11 @@
         <xs:attribute name="spacing-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Vertical space between cells</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="spacing" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Space between cells</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="pad-top" type="xs:string">
@@ -1422,6 +1667,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
@@ -1430,6 +1680,11 @@
         <xs:attribute name="anchor-max-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
@@ -1442,6 +1697,11 @@
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The width of this RectTransform relative to the distances between the anchors.</xs:documentation>
@@ -1452,6 +1712,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -1460,6 +1725,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -1600,6 +1870,26 @@
                 <xs:documentation>The minimum width this layout element should have.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="flex-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flex-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pad-top" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Top padding</xs:documentation>
@@ -1640,6 +1930,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
@@ -1648,6 +1943,11 @@
         <xs:attribute name="anchor-max-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
@@ -1660,6 +1960,11 @@
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The width of this RectTransform relative to the distances between the anchors.</xs:documentation>
@@ -1670,6 +1975,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -1678,6 +1988,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -1759,6 +2074,26 @@
                 <xs:documentation>The minimum width this layout element should have.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="flex-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flex-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pad-top" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Top padding</xs:documentation>
@@ -1799,6 +2134,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
@@ -1807,6 +2147,11 @@
         <xs:attribute name="anchor-max-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
@@ -1819,6 +2164,11 @@
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The width of this RectTransform relative to the distances between the anchors.</xs:documentation>
@@ -1829,6 +2179,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -1837,6 +2192,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -1937,6 +2297,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
@@ -1945,6 +2310,11 @@
         <xs:attribute name="anchor-max-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
@@ -1957,6 +2327,11 @@
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The width of this RectTransform relative to the distances between the anchors.</xs:documentation>
@@ -1967,6 +2342,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -1975,6 +2355,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -2056,6 +2441,26 @@
                 <xs:documentation>The minimum width this layout element should have.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="flex-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flex-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-min-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
@@ -2064,6 +2469,11 @@
         <xs:attribute name="anchor-min-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
@@ -2076,6 +2486,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The x position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
@@ -2084,6 +2499,11 @@
         <xs:attribute name="anchor-pos-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
@@ -2096,6 +2516,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -2106,6 +2531,11 @@
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Text that will appear when a pointer hovers over</xs:documentation>
@@ -2114,6 +2544,16 @@
         <xs:attribute name="active" type="bool">
             <xs:annotation>
                 <xs:documentation>Whether or not the GameObject this RectTransform belongs to is active</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="raycast-target" type="bool">
+            <xs:annotation>
+                <xs:documentation>Whether this element functions as a raycast target</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="raycast-padding" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Vec4 padding</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="tags" type="xs:string" />
@@ -2169,6 +2609,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
@@ -2177,6 +2622,11 @@
         <xs:attribute name="anchor-max-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
@@ -2189,6 +2639,11 @@
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The width of this RectTransform relative to the distances between the anchors.</xs:documentation>
@@ -2199,6 +2654,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -2207,6 +2667,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -2297,6 +2762,26 @@
                 <xs:documentation>The minimum width this layout element should have.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="flex-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flex-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pad-top" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Top padding</xs:documentation>
@@ -2337,6 +2822,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
@@ -2345,6 +2835,11 @@
         <xs:attribute name="anchor-max-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
@@ -2357,6 +2852,11 @@
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The width of this RectTransform relative to the distances between the anchors.</xs:documentation>
@@ -2367,6 +2867,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -2375,6 +2880,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -2460,6 +2970,26 @@
                 <xs:documentation>The minimum width this layout element should have.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="flex-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flex-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-min-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
@@ -2468,6 +2998,11 @@
         <xs:attribute name="anchor-min-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
@@ -2480,6 +3015,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The x position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
@@ -2488,6 +3028,11 @@
         <xs:attribute name="anchor-pos-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
@@ -2500,6 +3045,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -2508,6 +3058,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -2694,6 +3249,26 @@
                 <xs:documentation>The minimum width this layout element should have.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="flex-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flex-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pad-top" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Top padding</xs:documentation>
@@ -2734,6 +3309,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
@@ -2742,6 +3322,11 @@
         <xs:attribute name="anchor-max-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
@@ -2754,6 +3339,11 @@
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The width of this RectTransform relative to the distances between the anchors.</xs:documentation>
@@ -2764,6 +3354,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -2772,6 +3367,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -2922,6 +3522,26 @@
                 <xs:documentation>The minimum width this layout element should have.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="flex-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flex-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-min-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
@@ -2930,6 +3550,11 @@
         <xs:attribute name="anchor-min-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
@@ -2942,6 +3567,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The x position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
@@ -2950,6 +3580,11 @@
         <xs:attribute name="anchor-pos-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
@@ -2962,6 +3597,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -2972,6 +3612,11 @@
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Text that will appear when a pointer hovers over</xs:documentation>
@@ -2980,6 +3625,16 @@
         <xs:attribute name="active" type="bool">
             <xs:annotation>
                 <xs:documentation>Whether or not the GameObject this RectTransform belongs to is active</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="raycast-target" type="bool">
+            <xs:annotation>
+                <xs:documentation>Whether this element functions as a raycast target</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="raycast-padding" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Vec4 padding</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="tags" type="xs:string" />
@@ -3006,6 +3661,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
@@ -3014,6 +3674,11 @@
         <xs:attribute name="anchor-max-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
@@ -3026,6 +3691,11 @@
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The width of this RectTransform relative to the distances between the anchors.</xs:documentation>
@@ -3036,6 +3706,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -3044,6 +3719,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -3164,6 +3844,26 @@
                 <xs:documentation>The minimum width this layout element should have.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="flex-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flex-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-min-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
@@ -3172,6 +3872,11 @@
         <xs:attribute name="anchor-min-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
@@ -3184,6 +3889,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The x position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
@@ -3192,6 +3902,11 @@
         <xs:attribute name="anchor-pos-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
@@ -3204,6 +3919,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -3212,6 +3932,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -3293,6 +4018,26 @@
                 <xs:documentation>The minimum width this layout element should have.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="flex-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flex-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-min-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
@@ -3301,6 +4046,11 @@
         <xs:attribute name="anchor-min-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
@@ -3313,6 +4063,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The x position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
@@ -3321,6 +4076,11 @@
         <xs:attribute name="anchor-pos-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
@@ -3333,6 +4093,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -3343,6 +4108,11 @@
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Text that will appear when a pointer hovers over</xs:documentation>
@@ -3351,6 +4121,16 @@
         <xs:attribute name="active" type="bool">
             <xs:annotation>
                 <xs:documentation>Whether or not the GameObject this RectTransform belongs to is active</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="raycast-target" type="bool">
+            <xs:annotation>
+                <xs:documentation>Whether this element functions as a raycast target</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="raycast-padding" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Vec4 padding</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="tags" type="xs:string" />
@@ -3401,6 +4181,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
@@ -3409,6 +4194,11 @@
         <xs:attribute name="anchor-max-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
@@ -3421,6 +4211,11 @@
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The width of this RectTransform relative to the distances between the anchors.</xs:documentation>
@@ -3431,6 +4226,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -3439,6 +4239,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -3484,6 +4289,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
@@ -3492,6 +4302,11 @@
         <xs:attribute name="anchor-max-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
@@ -3504,6 +4319,11 @@
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The width of this RectTransform relative to the distances between the anchors.</xs:documentation>
@@ -3514,6 +4334,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -3522,6 +4347,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -3603,6 +4433,26 @@
                 <xs:documentation>The minimum width this layout element should have.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="flex-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flex-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="dir" type="PageButtonDirection">
             <xs:annotation>
                 <xs:documentation>Direction of the page button</xs:documentation>
@@ -3623,6 +4473,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
@@ -3631,6 +4486,11 @@
         <xs:attribute name="anchor-max-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
@@ -3643,6 +4503,11 @@
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The width of this RectTransform relative to the distances between the anchors.</xs:documentation>
@@ -3653,6 +4518,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -3661,6 +4531,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -3756,6 +4631,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
@@ -3764,6 +4644,11 @@
         <xs:attribute name="anchor-max-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
@@ -3776,6 +4661,11 @@
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The width of this RectTransform relative to the distances between the anchors.</xs:documentation>
@@ -3786,6 +4676,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -3794,6 +4689,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -3886,6 +4786,26 @@
                 <xs:documentation>The minimum width this layout element should have.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="flex-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flex-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pad-top" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Top padding</xs:documentation>
@@ -3926,6 +4846,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
@@ -3934,6 +4859,11 @@
         <xs:attribute name="anchor-max-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
@@ -3946,6 +4876,11 @@
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The width of this RectTransform relative to the distances between the anchors.</xs:documentation>
@@ -3956,6 +4891,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -3964,6 +4904,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -4020,6 +4965,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
@@ -4028,6 +4978,11 @@
         <xs:attribute name="anchor-max-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
@@ -4040,6 +4995,11 @@
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The width of this RectTransform relative to the distances between the anchors.</xs:documentation>
@@ -4050,6 +5010,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -4058,6 +5023,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -4148,6 +5118,26 @@
                 <xs:documentation>The minimum width this layout element should have.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="flex-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flex-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pad-top" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Top padding</xs:documentation>
@@ -4188,6 +5178,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
@@ -4196,6 +5191,11 @@
         <xs:attribute name="anchor-max-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
@@ -4208,6 +5208,11 @@
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The width of this RectTransform relative to the distances between the anchors.</xs:documentation>
@@ -4218,6 +5223,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -4226,6 +5236,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -4341,6 +5356,26 @@
                 <xs:documentation>The minimum width this layout element should have.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="flex-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flex-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pad-top" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Top padding</xs:documentation>
@@ -4381,6 +5416,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
@@ -4389,6 +5429,11 @@
         <xs:attribute name="anchor-max-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
@@ -4401,6 +5446,11 @@
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The width of this RectTransform relative to the distances between the anchors.</xs:documentation>
@@ -4411,6 +5461,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -4419,6 +5474,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -4505,6 +5565,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
@@ -4513,6 +5578,11 @@
         <xs:attribute name="anchor-max-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
@@ -4525,6 +5595,11 @@
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The width of this RectTransform relative to the distances between the anchors.</xs:documentation>
@@ -4535,6 +5610,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -4543,6 +5623,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -4648,6 +5733,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
@@ -4656,6 +5746,11 @@
         <xs:attribute name="anchor-max-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
@@ -4668,6 +5763,11 @@
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The width of this RectTransform relative to the distances between the anchors.</xs:documentation>
@@ -4678,6 +5778,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -4686,6 +5791,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -4721,6 +5831,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
@@ -4729,6 +5844,11 @@
         <xs:attribute name="anchor-max-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
@@ -4741,6 +5861,11 @@
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The width of this RectTransform relative to the distances between the anchors.</xs:documentation>
@@ -4751,6 +5876,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -4759,6 +5889,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -4929,6 +6064,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
@@ -4937,6 +6077,11 @@
         <xs:attribute name="anchor-max-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
@@ -4949,6 +6094,11 @@
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The width of this RectTransform relative to the distances between the anchors.</xs:documentation>
@@ -4959,6 +6109,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -4967,6 +6122,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -5057,6 +6217,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
@@ -5065,6 +6230,11 @@
         <xs:attribute name="anchor-max-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
@@ -5077,6 +6247,11 @@
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The width of this RectTransform relative to the distances between the anchors.</xs:documentation>
@@ -5087,6 +6262,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -5095,6 +6275,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -5226,6 +6411,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
@@ -5234,6 +6424,11 @@
         <xs:attribute name="anchor-max-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
@@ -5246,6 +6441,11 @@
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The width of this RectTransform relative to the distances between the anchors.</xs:documentation>
@@ -5256,6 +6456,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -5264,6 +6469,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -5474,6 +6684,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
@@ -5482,6 +6697,11 @@
         <xs:attribute name="anchor-max-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
@@ -5494,6 +6714,11 @@
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The width of this RectTransform relative to the distances between the anchors.</xs:documentation>
@@ -5504,6 +6729,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -5512,6 +6742,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -5652,6 +6887,26 @@
                 <xs:documentation>The minimum width this layout element should have.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="flex-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flex-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pad-top" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Top padding</xs:documentation>
@@ -5692,6 +6947,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
@@ -5700,6 +6960,11 @@
         <xs:attribute name="anchor-max-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
@@ -5712,6 +6977,11 @@
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The width of this RectTransform relative to the distances between the anchors.</xs:documentation>
@@ -5722,6 +6992,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -5730,6 +7005,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -5790,6 +7070,26 @@
                 <xs:documentation>The minimum width this layout element should have.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="flex-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flex-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-min-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
@@ -5798,6 +7098,11 @@
         <xs:attribute name="anchor-min-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
@@ -5810,6 +7115,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The x position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
@@ -5818,6 +7128,11 @@
         <xs:attribute name="anchor-pos-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
@@ -5830,6 +7145,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -5838,6 +7158,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -6003,6 +7328,26 @@
                 <xs:documentation>The minimum width this layout element should have.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="flex-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flex-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-min-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
@@ -6011,6 +7356,11 @@
         <xs:attribute name="anchor-min-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
@@ -6023,6 +7373,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The x position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
@@ -6031,6 +7386,11 @@
         <xs:attribute name="anchor-pos-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
@@ -6043,6 +7403,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -6051,6 +7416,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -6231,6 +7601,26 @@
                 <xs:documentation>The minimum width this layout element should have.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="flex-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flex-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-min-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
@@ -6239,6 +7629,11 @@
         <xs:attribute name="anchor-min-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
@@ -6251,6 +7646,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The x position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
@@ -6259,6 +7659,11 @@
         <xs:attribute name="anchor-pos-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
@@ -6271,6 +7676,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -6279,6 +7689,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -6469,6 +7884,26 @@
                 <xs:documentation>The minimum width this layout element should have.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="flex-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flex-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-min-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
@@ -6477,6 +7912,11 @@
         <xs:attribute name="anchor-min-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
@@ -6489,6 +7929,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The x position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
@@ -6497,6 +7942,11 @@
         <xs:attribute name="anchor-pos-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
@@ -6509,6 +7959,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -6517,6 +7972,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -6697,6 +8157,26 @@
                 <xs:documentation>The minimum width this layout element should have.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="flex-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flex-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-min-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
@@ -6705,6 +8185,11 @@
         <xs:attribute name="anchor-min-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
@@ -6717,6 +8202,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The x position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
@@ -6725,6 +8215,11 @@
         <xs:attribute name="anchor-pos-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
@@ -6737,6 +8232,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -6745,6 +8245,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -6925,6 +8430,26 @@
                 <xs:documentation>The minimum width this layout element should have.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="flex-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flex-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-min-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
@@ -6933,6 +8458,11 @@
         <xs:attribute name="anchor-min-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
@@ -6945,6 +8475,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The x position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
@@ -6953,6 +8488,11 @@
         <xs:attribute name="anchor-pos-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
@@ -6965,6 +8505,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -6973,6 +8518,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -7168,6 +8718,26 @@
                 <xs:documentation>The minimum width this layout element should have.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="flex-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flex-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-min-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
@@ -7176,6 +8746,11 @@
         <xs:attribute name="anchor-min-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
@@ -7188,6 +8763,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The x position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
@@ -7196,6 +8776,11 @@
         <xs:attribute name="anchor-pos-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
@@ -7208,6 +8793,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -7216,6 +8806,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
@@ -7371,6 +8966,26 @@
                 <xs:documentation>The minimum width this layout element should have.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="flex-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flex-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-height" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible height this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flexible-width" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The flexible width this layout element should have.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-min-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized x position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
@@ -7379,6 +8994,11 @@
         <xs:attribute name="anchor-min-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The normalized y position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchor-min" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the lower left corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="anchor-max-x" type="xs:string">
@@ -7391,6 +9011,11 @@
                 <xs:documentation>The normalized y position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="anchor-max" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The normalized position in the parent RectTransform that the upper right corner is anchored to.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="anchor-pos-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The x position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
@@ -7399,6 +9024,11 @@
         <xs:attribute name="anchor-pos-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>The y position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="anchored-position" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The position of the pivot of this RectTransform relative to the anchor reference point.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="size-delta-x" type="xs:string">
@@ -7411,6 +9041,11 @@
                 <xs:documentation>The height of this RectTransform relative to the distances between the anchors.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute name="size-delta" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The size of this RectTransform relative to the distances between the anchors.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
         <xs:attribute name="pivot-x" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized x position to rotate around</xs:documentation>
@@ -7419,6 +9054,11 @@
         <xs:attribute name="pivot-y" type="xs:string">
             <xs:annotation>
                 <xs:documentation>Normalized y position to rotate around</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="pivot" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Normalized position to rotate around</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="hover-hint" type="xs:string">
